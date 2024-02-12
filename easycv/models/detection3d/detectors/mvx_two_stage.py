@@ -1,12 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # Copyright (c) Alibaba, Inc. and its affiliates.
-from os import path as osp
-
 import mmcv
 import torch
 from mmcv.ops import Voxelization
 from mmcv.parallel import DataContainer as DC
 from mmcv.runner import force_fp32
+from os import path as osp
 from torch.nn import functional as F
 
 from easycv.core.bbox import Box3DMode, Coord3DMode

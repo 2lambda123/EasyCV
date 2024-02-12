@@ -1,6 +1,7 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 # isort:skip_file
 from easycv.utils.import_utils import check_numpy
+
 check_numpy()
 from . import (classification, detection, detection3d, face, ocr, pose,
                segmentation, selfsup, shared, video_recognition)

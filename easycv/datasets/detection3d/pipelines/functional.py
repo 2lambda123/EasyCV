@@ -19,10 +19,9 @@
 # methods in transforms.py.
 ######################################################################
 
-from typing import List, Tuple
-
 import cv2
 import numpy as np
+from typing import List, Tuple
 
 #  Available interpolation modes (opencv)
 cv2_interp_codes = {

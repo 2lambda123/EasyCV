@@ -1,6 +1,5 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import os
-
 from torchvision.datasets import Caltech101, Caltech256
 from torchvision.datasets.utils import (download_and_extract_archive,
                                         extract_archive)

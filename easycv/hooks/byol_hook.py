@@ -1,6 +1,5 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 from math import cos, pi
-
 from mmcv.runner import Hook
 
 from .registry import HOOKS

@@ -3,7 +3,6 @@
 import copy
 import inspect
 import logging
-
 import mmcv
 import numpy as np
 import torch
@@ -18,8 +17,8 @@ from .test_util import run_in_subprocess
 MMDET = 'mmdet'
 
 try:
-    from mmcv.runner.hooks import HOOKS
     import mmdet
+    from mmcv.runner.hooks import HOOKS
     HOOKS._module_dict.pop('YOLOXLrUpdaterHook', None)
     from mmdet.core import BitmapMasks, PolygonMasks, encode_mask_results
     from mmdet.core.mask import mask2bbox
@@ -161,10 +160,10 @@ class MMAdapter:
         global MM_REGISTRY
 
         if MM_REGISTRY is None:
-            from mmdet.models.builder import MODELS as MMMODELS
             from mmdet.models.builder import BACKBONES as MMBACKBONES
-            from mmdet.models.builder import NECKS as MMNECKS
             from mmdet.models.builder import HEADS as MMHEADS
+            from mmdet.models.builder import MODELS as MMMODELS
+            from mmdet.models.builder import NECKS as MMNECKS
             MM_REGISTRY = {
                 MMDET: {
                     'model': MMMODELS,

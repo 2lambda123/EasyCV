@@ -1,9 +1,8 @@
 import math
-from typing import Optional
-
 import torch
 from torch import Tensor, nn
 from torch.nn import functional as F
+from typing import Optional
 
 from easycv.framework.errors import RuntimeError, ValueError
 

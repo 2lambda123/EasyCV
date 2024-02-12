@@ -2,12 +2,11 @@
 import os
 import unittest
 
-from tests.ut_config import (IMG_NORM_CFG_255, SEG_DATA_SMALL_RAW_LOCAL,
-                             VOC_CLASSES)
-
 from easycv.core.evaluation.builder import build_evaluator
 from easycv.datasets.builder import build_datasource
 from easycv.datasets.segmentation.raw import SegDataset
+from tests.ut_config import (IMG_NORM_CFG_255, SEG_DATA_SMALL_RAW_LOCAL,
+                             VOC_CLASSES)
 
 
 class SegDatasetTest(unittest.TestCase):

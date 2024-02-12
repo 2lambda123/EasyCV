@@ -1,14 +1,14 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
+import cv2
 import os
 import tempfile
 import unittest
-
-import cv2
 from modelscope.outputs import OutputKeys
 from modelscope.pipelines import pipeline
 from modelscope.utils.constant import Tasks
 from modelscope.utils.cv.image_utils import panoptic_seg_masks_to_image
 from modelscope.utils.test_utils import test_level
+
 from tests.ut_config import BASE_LOCAL_PATH
 
 

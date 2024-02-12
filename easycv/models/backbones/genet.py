@@ -1,9 +1,8 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
-import uuid
-
 import numpy as np
 import torch
 import torch.nn.functional as F
+import uuid
 from mmcv.cnn import constant_init, kaiming_init
 from torch import nn
 from torch.nn.modules.batchnorm import _BatchNorm

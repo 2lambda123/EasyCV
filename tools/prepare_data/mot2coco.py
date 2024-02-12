@@ -33,12 +33,11 @@
 # python tools/convert_datasets/mot2coco.py -i /apsara/yunji.cjy/tracking/MOT20 -o /apsara/yunji.cjy/tracking/MOT20/annotations --split-train --convert-det
 
 import argparse
+import mmcv
+import numpy as np
 import os
 import os.path as osp
 from collections import defaultdict
-
-import mmcv
-import numpy as np
 from tqdm import tqdm
 
 USELESS = [3, 4, 5, 6, 9, 10, 11]

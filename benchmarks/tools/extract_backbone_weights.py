@@ -1,6 +1,5 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import argparse
-
 import torch
 
 from easycv.framework.errors import ValueError

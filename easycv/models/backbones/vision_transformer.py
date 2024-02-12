@@ -4,10 +4,9 @@ Mostly copy-paste from timm library.
 https://github.com/rwightman/pytorch-image-models/blob/master/timm/models/vision_transformer.py
 
 """
-from functools import partial
-
 import torch
 import torch.nn as nn
+from functools import partial
 from timm.models.layers import trunc_normal_
 
 from easycv.models.utils import DropPath, Mlp
@@ -285,8 +284,9 @@ class VisionTransformer(nn.Module):
                 for x in range(self.depth)
             ]
             head = [
-                self.embed_dim if x >=
-                (self.depth - self.hydra_attention_layers) else self.num_heads
+                self.embed_dim
+                if x >= (self.depth -
+                         self.hydra_attention_layers) else self.num_heads
                 for x in range(self.depth)
             ]
         else:

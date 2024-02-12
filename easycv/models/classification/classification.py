@@ -1,11 +1,10 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
-from typing import Dict, List, Optional
-
 import numpy as np
 import torch
 import torch.nn as nn
 from mmcv.runner import get_dist_info
 from timm.data.mixup import Mixup
+from typing import Dict, List, Optional
 
 from easycv.framework.errors import KeyError, NotImplementedError, ValueError
 from easycv.utils.checkpoint import load_checkpoint

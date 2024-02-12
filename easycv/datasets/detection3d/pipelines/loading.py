@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import concurrent.futures
-
 import mmcv
 import numpy as np
 

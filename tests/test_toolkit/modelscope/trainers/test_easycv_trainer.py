@@ -4,9 +4,8 @@ import json
 import os
 import shutil
 import tempfile
-import unittest
-
 import torch
+import unittest
 from modelscope.msdatasets import MsDataset
 from modelscope.trainers import build_trainer
 from modelscope.utils.config import Config
@@ -161,8 +160,9 @@ class EasyCVTrainerTestSingleGpu(unittest.TestCase):
             self.assertIn('DetectionBoxes_Precision/mAP (small)', lines[i])
 
 
-@unittest.skipIf(not torch.cuda.is_available()
-                 or torch.cuda.device_count() <= 1, 'distributed unittest')
+@unittest.skipIf(
+    not torch.cuda.is_available() or torch.cuda.device_count() <= 1,
+    'distributed unittest')
 class EasyCVTrainerTestMultiGpus(DistributedTestCase):
 
     def setUp(self):

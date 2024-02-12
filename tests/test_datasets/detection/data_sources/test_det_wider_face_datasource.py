@@ -1,11 +1,10 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
+import numpy as np
 import random
 import unittest
 
-import numpy as np
-from tests.ut_config import DET_DATASET_WIDER_FACE
-
 from easycv.datasets.builder import build_datasource
+from tests.ut_config import DET_DATASET_WIDER_FACE
 
 
 class DetSourceWiderFaceTest(unittest.TestCase):

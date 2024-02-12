@@ -1,10 +1,9 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import functools
 import logging
+import numpy as np
 import os
 from multiprocessing import cpu_count
-
-import numpy as np
 
 from easycv.core.bbox.bbox_util import batched_cxcywh2xyxy_with_shape
 from easycv.datasets.registry import DATASOURCES

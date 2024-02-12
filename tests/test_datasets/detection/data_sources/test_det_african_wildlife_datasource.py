@@ -1,11 +1,10 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
+import numpy as np
 import random
 import unittest
 
-import numpy as np
-from tests.ut_config import DET_DATASET_DOWNLOAD_AFRICAN_WILDLIFE
-
 from easycv.datasets.builder import build_datasource
+from tests.ut_config import DET_DATASET_DOWNLOAD_AFRICAN_WILDLIFE
 
 
 class DetSourceAfricanWildlife(unittest.TestCase):

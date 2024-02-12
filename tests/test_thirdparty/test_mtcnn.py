@@ -1,11 +1,10 @@
+import numpy as np
 import os
 import unittest
-
-import numpy as np
 from PIL import Image
-from tests.ut_config import TEST_IMAGES_DIR
 
 from easycv.thirdparty.mtcnn import FaceDetector
+from tests.ut_config import TEST_IMAGES_DIR
 
 bbox_res = [[
     1.06963833e+03, 5.70454030e+02, 1.53262074e+03, 1.17753027e+03,

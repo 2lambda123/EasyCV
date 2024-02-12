@@ -1,12 +1,11 @@
 # Modified from https://github.com/fundamentalvision/BEVFormer.
 # Copyright (c) Alibaba, Inc. and its affiliates.
-from typing import Optional
-
 import torch
 import torch.nn as nn
 from mmcv.cnn import xavier_init
 from mmcv.runner import force_fp32
 from mmcv.runner.base_module import BaseModule
+from typing import Optional
 
 from easycv.models.builder import build_attention
 from easycv.models.registry import ATTENTION
@@ -55,8 +54,8 @@ class SpatialCrossAttention(BaseModule):
         xavier_init(self.output_proj, distribution='uniform', bias=0.)
 
     @force_fp32(
-        apply_to=('query', 'key', 'value', 'query_pos', 'reference_points_cam')
-    )
+        apply_to=('query', 'key', 'value', 'query_pos',
+                  'reference_points_cam'))
     def forward(
         self,
         query: torch.Tensor,

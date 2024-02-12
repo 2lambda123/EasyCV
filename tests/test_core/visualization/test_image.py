@@ -1,8 +1,7 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
+import numpy as np
 import tempfile
 import unittest
-
-import numpy as np
 
 from easycv.core.visualization import (imshow_bboxes, imshow_keypoints,
                                        imshow_label)

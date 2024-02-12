@@ -1,13 +1,12 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
+import numpy as np
 import os
 import random
 import unittest
 
-import numpy as np
-from tests.ut_config import SEG_DATA_SMALL_RAW_LOCAL, VOC_CLASSES
-
 from easycv.datasets.segmentation.data_sources.raw import SegSourceRaw
 from easycv.file import io
+from tests.ut_config import SEG_DATA_SMALL_RAW_LOCAL, VOC_CLASSES
 
 
 class SegSourceRawTest(unittest.TestCase):

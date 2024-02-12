@@ -19,22 +19,21 @@ Mostly copy-paste from https://github.com/pytorch/pytorch/blob/master/torch/nn/m
 and https://github.com/pytorch/pytorch/blob/master/torch/nn/functional.py#L4837
 """
 
-import warnings
-from typing import Optional, Tuple
-
 import torch
+import warnings
 from torch import Tensor
 from torch.nn.functional import dropout, linear, pad, softmax
 from torch.nn.init import constant_
 from torch.nn.modules.linear import Linear
 from torch.nn.modules.module import Module
+from typing import Optional, Tuple
 
 from easycv.framework.errors import RuntimeError
 
 try:
-    from torch.overrides import has_torch_function, handle_torch_function
+    from torch.overrides import handle_torch_function, has_torch_function
 except:
-    from torch._overrides import has_torch_function, handle_torch_function
+    from torch._overrides import handle_torch_function, has_torch_function
 
 
 class MultiheadAttention(Module):

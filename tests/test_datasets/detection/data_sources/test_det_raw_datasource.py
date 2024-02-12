@@ -1,13 +1,12 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
+import numpy as np
 import os
 import random
 import unittest
 
-import numpy as np
-from tests.ut_config import DET_DATA_RAW_LOCAL
-
 from easycv.datasets.detection.data_sources.raw import DetSourceRaw
 from easycv.file import io
+from tests.ut_config import DET_DATA_RAW_LOCAL
 
 
 class DetSourceRawTest(unittest.TestCase):

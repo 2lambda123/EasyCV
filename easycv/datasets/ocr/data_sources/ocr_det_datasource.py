@@ -2,10 +2,9 @@
 import csv
 import json
 import logging
+import numpy as np
 import os
 import traceback
-
-import numpy as np
 
 from easycv.datasets.registry import DATASOURCES
 from easycv.file.image import load_image

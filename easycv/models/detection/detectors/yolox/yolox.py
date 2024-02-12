@@ -1,11 +1,10 @@
 # Copyright (c) 2014-2021 Megvii Inc And Alibaba PAI-Teams. All rights reserved.
 import logging
-from typing import Dict
-
 import numpy as np
 import torch
 import torch.nn as nn
 from torch import Tensor
+from typing import Dict
 
 from easycv.models.base import BaseModel
 from easycv.models.builder import MODELS, build_head

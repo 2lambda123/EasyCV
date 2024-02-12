@@ -1,10 +1,9 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import functools
+import torch
 import unittest
 from copy import deepcopy
 from distutils.version import LooseVersion
-
-import torch
 from torch.autograd import Variable
 from torch.optim.lr_scheduler import ExponentialLR, ReduceLROnPlateau, StepLR
 from torch.testing._internal.common_utils import TestCase

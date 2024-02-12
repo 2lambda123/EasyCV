@@ -1,11 +1,10 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
+import numpy as np
 import random
 import unittest
 
-import numpy as np
-from tests.ut_config import SMALL_COCO_WHOLE_BODY_HAND_ROOT
-
 from easycv.datasets.pose.data_sources import HandCocoPoseTopDownSource
+from tests.ut_config import SMALL_COCO_WHOLE_BODY_HAND_ROOT
 
 _DATA_CFG = dict(
     image_size=[256, 256],

@@ -1,7 +1,6 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
-import time
-
 import numpy as np
+import time
 import torch
 from mmcv.runner import Hook, get_dist_info
 

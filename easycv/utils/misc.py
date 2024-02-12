@@ -2,12 +2,11 @@
 import functools
 import inspect
 import logging
-import pickle
-import warnings
-
 import mmcv
 import numpy as np
+import pickle
 import torch
+import warnings
 
 from easycv.framework.errors import ValueError
 

@@ -1,11 +1,10 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
+import numpy as np
 import random
 import unittest
 
-import numpy as np
-from tests.ut_config import DET_DATASET_TINY_PERSON
-
 from easycv.datasets.detection.data_sources.coco import DetSourceTinyPerson
+from tests.ut_config import DET_DATASET_TINY_PERSON
 
 
 class DetSourceCocoTest(unittest.TestCase):

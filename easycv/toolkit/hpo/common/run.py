@@ -1,9 +1,8 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import argparse
 import logging
-import os
-
 import nni
+import os
 from hpo_tools.core.metric.report_summary_metric import report_result
 from hpo_tools.core.platform.dlc.dlc_utils import kill_job, run_multi_command
 from hpo_tools.core.utils.config_utils import parse_ini

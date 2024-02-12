@@ -99,9 +99,9 @@ def create_tensorrt_efficientnms(example_scores,
     """
 
     """
-    from torch_blade import tensorrt
-    import torch_blade._torch_blade._backends as backends
     import io
+    import torch_blade._torch_blade._backends as backends
+    from torch_blade import tensorrt
 
     model = torch.jit.trace(
         ONNX_TRT8(iou_thres=iou_thres, score_thres=score_thres),

@@ -1,10 +1,9 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
-from typing import List
-
 import torch
 import torch.nn as nn
 from mmcv.cnn import constant_init, kaiming_init
 from torch.nn.modules.batchnorm import _BatchNorm
+from typing import List
 
 from easycv.framework.errors import KeyError
 from ..registry import BACKBONES

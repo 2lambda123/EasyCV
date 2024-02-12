@@ -14,16 +14,16 @@
 # ==============================================================================
 """Class for evaluating object detections with COCO metrics."""
 from __future__ import print_function
-import json
-import multiprocessing
-import os
-import tempfile
-from collections import OrderedDict, defaultdict
 
+import json
 import mmcv
+import multiprocessing
 import numpy as np
+import os
 import six
+import tempfile
 import torch
+from collections import OrderedDict, defaultdict
 from xtcocotools.coco import COCO
 from xtcocotools.cocoeval import COCOeval
 

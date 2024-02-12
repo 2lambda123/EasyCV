@@ -1,14 +1,13 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
+import numpy as np
 import os
 import random
 import unittest
 
-import numpy as np
-from tests.ut_config import (COCO_CLASSES, COCO_DATASET_DOWNLOAD_SMALL,
-                             DET_DATA_SMALL_COCO_LOCAL)
-
 from easycv.datasets.segmentation.data_sources.coco import (SegSourceCoco,
                                                             SegSourceCoco2017)
+from tests.ut_config import (COCO_CLASSES, COCO_DATASET_DOWNLOAD_SMALL,
+                             DET_DATA_SMALL_COCO_LOCAL)
 
 
 class SegSourceCocoTest(unittest.TestCase):

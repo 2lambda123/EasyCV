@@ -1,5 +1,4 @@
 import os
-
 from mmcv.runner import get_dist_info
 from tqdm import tqdm
 

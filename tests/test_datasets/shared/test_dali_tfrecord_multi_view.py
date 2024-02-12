@@ -2,15 +2,14 @@
 import os
 import random
 import shutil
+import torch
 import unittest
 import uuid
 
-import torch
-from tests.ut_config import (IMG_NORM_CFG, SMALL_IMAGENET_TFRECORD_LOCAL,
-                             SMALL_IMAGENET_TFRECORD_OSS, TMP_DIR_LOCAL)
-
 from easycv.datasets import build_dataset
 from easycv.file import io
+from tests.ut_config import (IMG_NORM_CFG, SMALL_IMAGENET_TFRECORD_LOCAL,
+                             SMALL_IMAGENET_TFRECORD_OSS, TMP_DIR_LOCAL)
 
 
 class DaliTFRecordMultiViewDatasetTest(unittest.TestCase):

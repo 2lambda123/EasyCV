@@ -6,13 +6,12 @@ import sys
 import tempfile
 import unittest
 import uuid
-
 from mmcv import Config
-from tests.ut_config import POSE_DATA_SMALL_COCO_LOCAL, TMP_DIR_OSS
 
 from easycv.file import io
 from easycv.file.utils import get_oss_config
 from easycv.utils.test_util import run_in_subprocess
+from tests.ut_config import POSE_DATA_SMALL_COCO_LOCAL, TMP_DIR_OSS
 
 sys.path.append(os.path.dirname(os.path.realpath(__file__)))
 

@@ -1,7 +1,6 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
-import io
-
 import cv2
+import io
 import numpy as np
 from cv2 import IMREAD_COLOR
 from PIL import Image
@@ -11,7 +10,7 @@ from easycv.framework.errors import KeyError, ValueError
 from .utils import is_url_path
 
 try:
-    from turbojpeg import TurboJPEG, TJCS_RGB, TJPF_BGR
+    from turbojpeg import TJCS_RGB, TJPF_BGR, TurboJPEG
     turbo_jpeg = TurboJPEG()
     turbo_jpeg_mode = {'RGB': TJCS_RGB, 'BGR': TJPF_BGR}
 except:

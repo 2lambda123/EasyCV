@@ -1,13 +1,12 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import argparse
 import json
+import mmcv
+import numpy as np
 import os
 import os.path as osp
 import random
 import time
-
-import mmcv
-import numpy as np
 import torch
 from mmcv.parallel import MMDataParallel, MMDistributedDataParallel
 from mmcv.runner import get_dist_info, init_dist, load_checkpoint

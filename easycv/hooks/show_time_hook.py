@@ -1,6 +1,5 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import time
-
 from mmcv.runner import Hook, get_dist_info
 
 from .registry import HOOKS

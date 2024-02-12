@@ -1,7 +1,6 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
-import unittest
-
 import numpy as np
+import unittest
 from numpy.testing import assert_array_almost_equal
 
 from easycv.core.evaluation import (keypoint_pck_accuracy,

@@ -1,11 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # Adapt from https://raw.githubusercontent.com/open-mmlab/mmpose/master/mmpose/models/detectors/top_down.py
 
-import warnings
-
 import mmcv
 import numpy as np
 import torch
+import warnings
 from mmcv.image import imwrite
 from mmcv.utils.misc import deprecated_api_warning
 from mmcv.visualization.image import imshow

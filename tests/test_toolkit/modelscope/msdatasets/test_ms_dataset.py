@@ -1,6 +1,5 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import unittest
-
 from modelscope.msdatasets import MsDataset
 from modelscope.utils.constant import DownloadMode
 

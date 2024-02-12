@@ -1,7 +1,6 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import copy
 import math
-
 import torch
 from mmcv.runner import Hook
 

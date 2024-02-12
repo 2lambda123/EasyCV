@@ -1,8 +1,7 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
-from collections import OrderedDict
-
 import numpy as np
 import torch
+from collections import OrderedDict
 from prettytable import PrettyTable
 
 from easycv.framework.errors import KeyError
@@ -69,14 +68,16 @@ class SegmentationEvaluator(Evaluator):
         eval_results = {}
         # summary table
         ret_metrics_summary = OrderedDict({
-            ret_metric: np.round(np.nanmean(ret_metric_value) * 100, 2)
+            ret_metric:
+            np.round(np.nanmean(ret_metric_value) * 100, 2)
             for ret_metric, ret_metric_value in ret_metrics.items()
         })
 
         # each class table
         ret_metrics.pop('aAcc', None)
         ret_metrics_class = OrderedDict({
-            ret_metric: np.round(ret_metric_value * 100, 2)
+            ret_metric:
+            np.round(ret_metric_value * 100, 2)
             for ret_metric, ret_metric_value in ret_metrics.items()
         })
         ret_metrics_class.update({'Class': self.classes})
@@ -274,7 +275,8 @@ def total_area_to_metrics(total_area_intersect,
     }
     if nan_to_num is not None:
         ret_metrics = OrderedDict({
-            metric: np.nan_to_num(metric_value, nan=nan_to_num)
+            metric:
+            np.nan_to_num(metric_value, nan=nan_to_num)
             for metric, metric_value in ret_metrics.items()
         })
     return ret_metrics

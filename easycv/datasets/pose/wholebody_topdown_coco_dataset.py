@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import os
-
 import numpy as np
+import os
 
 from easycv.core.evaluation.wholebody_keypoint_eval import \
     WholeBodyKeyPointEvaluator

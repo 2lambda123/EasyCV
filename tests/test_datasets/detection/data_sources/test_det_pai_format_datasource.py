@@ -1,13 +1,12 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
+import numpy as np
 import os
 import random
 import unittest
 
-import numpy as np
-from tests.ut_config import COCO_CLASSES, DET_DATA_MANIFEST_OSS
-
 from easycv.datasets.detection.data_sources.pai_format import DetSourcePAI
 from easycv.file import io
+from tests.ut_config import COCO_CLASSES, DET_DATA_MANIFEST_OSS
 
 
 class DetSourcePAITest(unittest.TestCase):

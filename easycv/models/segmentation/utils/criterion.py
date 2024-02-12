@@ -1,12 +1,11 @@
 # Copyright (c) Facebook, Inc. and its affiliates.
-from typing import List, Optional
-
 import torch
 import torch.distributed as dist
 import torch.nn.functional as F
 import torchvision
 from mmcv.runner import get_dist_info
 from torch import Tensor, nn
+from typing import List, Optional
 
 from easycv.framework.errors import ValueError
 from .point_rend import (get_uncertain_point_coords_with_randomness,

@@ -1,16 +1,15 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
+import numpy as np
 import os
 import random
 import unittest
 
-import numpy as np
-from tests.ut_config import (COCO_CLASSES, COCO_DATASET_DOWNLOAD_SMALL,
-                             DET_DATA_COCO2017_DOWNLOAD,
-                             DET_DATA_SMALL_COCO_LOCAL)
-
 from easycv.datasets.detection.data_sources.coco import (DetSourceCoco,
                                                          DetSourceCoco2017)
 from easycv.datasets.utils.download_data.download_coco import download_coco
+from tests.ut_config import (COCO_CLASSES, COCO_DATASET_DOWNLOAD_SMALL,
+                             DET_DATA_COCO2017_DOWNLOAD,
+                             DET_DATA_SMALL_COCO_LOCAL)
 
 
 class DetSourceCocoTest(unittest.TestCase):

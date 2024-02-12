@@ -1,6 +1,5 @@
 # Modified from https://github.com/PaddlePaddle/PaddleOCR/tree/release/2.6/ppocr/modeling/heads
 import math
-
 import torch
 import torch.nn as nn
 import torch.nn.functional as F

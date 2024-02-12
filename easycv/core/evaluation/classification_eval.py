@@ -1,8 +1,7 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
-from collections import OrderedDict
-
 import numpy as np
 import torch
+from collections import OrderedDict
 from sklearn.metrics import confusion_matrix
 
 from easycv.utils.logger import print_log
@@ -134,10 +133,10 @@ class ClsEvaluator(Evaluator):
                 precision_mean = np.mean(precision)
                 f1_mean = np.mean(f1, axis=0)
 
-                valid_target = target_onehot[
-                    np.sum(target_onehot, axis=1) <= 1]
-                valid_predict = predict_onehot[
-                    np.sum(target_onehot, axis=1) <= 1]
+                valid_target = target_onehot[np.sum(target_onehot, axis=1) <=
+                                             1]
+                valid_predict = predict_onehot[np.sum(target_onehot, axis=1) <=
+                                               1]
                 for sub_predict, sub_target in zip(valid_target,
                                                    valid_predict):
                     valid_true.append(self.class_list[sub_target.argmax()])

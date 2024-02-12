@@ -3,9 +3,8 @@ import os
 import random
 import unittest
 
-from tests.ut_config import SMALL_IMAGENET_RAW_LOCAL
-
 from easycv.datasets.builder import build_datasource
+from tests.ut_config import SMALL_IMAGENET_RAW_LOCAL
 
 
 class SSLSourceImageListTest(unittest.TestCase):

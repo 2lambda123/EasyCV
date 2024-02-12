@@ -15,9 +15,9 @@
 """Tests for tensorflow_models.metrics.coco_evaluation."""
 
 from __future__ import absolute_import, division, print_function
-import unittest
 
 import numpy as np
+import unittest
 
 from easycv.core import standard_fields
 from easycv.core.evaluation import coco_evaluation

@@ -1,11 +1,10 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
+import cv2
 import os
 import unittest
 
-import cv2
-from tests.ut_config import BASE_LOCAL_PATH, PRETRAINED_MODEL_FACE_2D_KEYPOINTS
-
 from easycv.predictors.face_keypoints_predictor import FaceKeypointsPredictor
+from tests.ut_config import BASE_LOCAL_PATH, PRETRAINED_MODEL_FACE_2D_KEYPOINTS
 
 
 class FaceKeypointsPredictorWithoutDetectorTest(unittest.TestCase):

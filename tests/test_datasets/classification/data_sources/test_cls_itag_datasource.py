@@ -1,10 +1,9 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import unittest
 
-from tests.ut_config import CLS_DATA_ITAG_OSS
-
 from easycv.datasets.builder import build_datasource
 from easycv.framework.errors import ValueError
+from tests.ut_config import CLS_DATA_ITAG_OSS
 
 
 class ClsSourceImageListTest(unittest.TestCase):

@@ -1,10 +1,9 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import json
-import os
-from glob import glob
-
 import numpy as np
+import os
 import torch
+from glob import glob
 
 from easycv.core.visualization import imshow_bboxes
 from easycv.datasets.utils import replace_ImageToTensor

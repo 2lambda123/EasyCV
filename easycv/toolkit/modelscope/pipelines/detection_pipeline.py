@@ -1,11 +1,10 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
-from typing import Any
-
 from modelscope.outputs import OutputKeys
 from modelscope.pipelines.builder import PIPELINES
 from modelscope.utils.constant import ModelFile, Tasks
 from modelscope.utils.cv.image_utils import \
     show_image_object_detection_auto_result
+from typing import Any
 
 from easycv.toolkit.modelscope.metainfo import EasyCVPipelines as Pipelines
 from .base import EasyCVPipeline

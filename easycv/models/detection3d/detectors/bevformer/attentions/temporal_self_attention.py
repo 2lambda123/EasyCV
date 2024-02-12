@@ -1,10 +1,9 @@
 # Modified from https://github.com/fundamentalvision/BEVFormer.
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import math
-import warnings
-
 import torch
 import torch.nn as nn
+import warnings
 from mmcv.cnn import constant_init, xavier_init
 from mmcv.ops.multi_scale_deform_attn import \
     multi_scale_deformable_attn_pytorch
@@ -232,7 +231,8 @@ class TemporalSelfAttention(BaseModule):
                 f'Last dim of reference_points must be'
                 f' 2 or 4, but get {reference_points.shape[-1]} instead.')
         if torch.cuda.is_available() and value.is_cuda:
-            from easycv.thirdparty.deformable_attention.functions import MSDeformAttnFunction
+            from easycv.thirdparty.deformable_attention.functions import \
+                MSDeformAttnFunction
             if not torch.jit.is_scripting() and not torch.jit.is_tracing():
                 op = MSDeformAttnFunction.apply
             else:

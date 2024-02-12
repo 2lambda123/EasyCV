@@ -1,7 +1,6 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
-from glob import glob
-
 import numpy as np
+from glob import glob
 from tqdm import tqdm
 
 from easycv.datasets.registry import DATASOURCES

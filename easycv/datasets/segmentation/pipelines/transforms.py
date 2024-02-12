@@ -1,8 +1,7 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
-import random
-
 import cv2
 import numpy as np
+import random
 
 from easycv.datasets.registry import PIPELINES
 

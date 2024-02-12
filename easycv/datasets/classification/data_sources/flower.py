@@ -1,7 +1,6 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import os
 from pathlib import Path
-
 from PIL import Image
 from scipy.io import loadmat
 from torchvision.datasets.utils import (check_integrity,

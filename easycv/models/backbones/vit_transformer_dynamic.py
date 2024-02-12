@@ -8,10 +8,9 @@ https://github.com/microsoft/esvit/blob/main/models/vision_transformer.py
 
 """
 import math
-from functools import partial
-
 import torch
 import torch.nn as nn
+from functools import partial
 
 from easycv.models.backbones.vision_transformer import Block, VisionTransformer
 
@@ -39,8 +38,9 @@ class DynamicVisionTransformer(VisionTransformer):
                 for x in range(self.depth)
             ]
             head = [
-                self.embed_dim if x >=
-                (self.depth - self.hydra_attention_layers) else self.num_heads
+                self.embed_dim
+                if x >= (self.depth -
+                         self.hydra_attention_layers) else self.num_heads
                 for x in range(self.depth)
             ]
         else:

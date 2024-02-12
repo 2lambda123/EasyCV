@@ -1,7 +1,6 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import glob
 import os
-
 from mmcv.runner import Hook
 from mmcv.runner.dist_utils import master_only
 

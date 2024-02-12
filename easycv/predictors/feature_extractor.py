@@ -1,9 +1,8 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import math
-from glob import glob
-
 import numpy as np
 import torch
+from glob import glob
 from PIL import Image
 
 from easycv.framework.errors import ValueError

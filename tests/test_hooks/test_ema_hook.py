@@ -1,11 +1,10 @@
 #! -*- coding: utf8 -*-
 # Copyright (c) Alibaba, Inc. and its affiliates.
+import numpy as np
 import os
 import time
-import unittest
-
-import numpy as np
 import torch
+import unittest
 from mmcv.parallel import MMDataParallel
 from torch import nn
 

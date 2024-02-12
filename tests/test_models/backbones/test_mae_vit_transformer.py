@@ -1,7 +1,6 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
-import unittest
-
 import torch
+import unittest
 
 from easycv.models.backbones.mae_vit_transformer import MaskedAutoencoderViT
 

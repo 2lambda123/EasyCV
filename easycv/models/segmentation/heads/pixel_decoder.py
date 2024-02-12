@@ -1,12 +1,11 @@
 import copy
-from typing import Callable, List, Optional, Union
-
 import numpy as np
 import torch
 from torch import nn
 from torch.cuda.amp import autocast
 from torch.nn import functional as F
 from torch.nn.init import normal_
+from typing import Callable, List, Optional, Union
 
 from .transformer_decoder import PositionEmbeddingSine, _get_activation_fn
 
@@ -110,7 +109,8 @@ class MSDeformAttnTransformerEncoderOnly(nn.Module):
             if p.dim() > 1:
                 nn.init.xavier_uniform_(p)
         for m in self.modules():
-            from easycv.thirdparty.deformable_attention.modules import MSDeformAttn
+            from easycv.thirdparty.deformable_attention.modules import \
+                MSDeformAttn
             if isinstance(m, MSDeformAttn):
                 m._reset_parameters()
         normal_(self.level_embed)

@@ -1,7 +1,6 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import logging
 import os
-
 import torch
 from mmcv.parallel import is_module_wrapper
 from mmcv.runner import load_checkpoint as mmcv_load_checkpoint
@@ -29,7 +28,7 @@ def get_checkpoint(filename):
             torch.distributed.barrier()
         filename = cache_file
     elif is_url_path(filename):
-        from torch.hub import urlparse, download_url_to_file
+        from torch.hub import download_url_to_file, urlparse
         parts = urlparse(filename)
         base_name = os.path.basename(parts.path)
         cache_file = os.path.join(CACHE_DIR, base_name)

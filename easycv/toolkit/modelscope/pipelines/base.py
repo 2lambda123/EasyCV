@@ -1,10 +1,8 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import glob
+import numpy as np
 import os
 import os.path as osp
-from typing import Any
-
-import numpy as np
 from modelscope.hub.snapshot_download import snapshot_download
 from modelscope.pipelines.util import is_official_hub_path
 from modelscope.utils.config import Config
@@ -12,6 +10,7 @@ from modelscope.utils.constant import (DEFAULT_MODEL_REVISION, Invoke,
                                        ModelFile, ThirdParty)
 from modelscope.utils.device import create_device
 from PIL import ImageFile
+from typing import Any
 
 from easycv.utils.ms_utils import EasyCVMeta
 

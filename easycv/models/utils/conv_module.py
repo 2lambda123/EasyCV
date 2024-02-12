@@ -1,7 +1,6 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
-import warnings
-
 import torch.nn as nn
+import warnings
 from mmcv.cnn import constant_init, kaiming_init
 from mmcv.ops.modulated_deform_conv import ModulatedDeformConv2dPack
 

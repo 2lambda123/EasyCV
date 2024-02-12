@@ -2,6 +2,7 @@
 # flake8: noqa
 # isort:skip_file
 import os
+
 os.environ['SETUPTOOLS_USE_DISTUTILS'] = 'stdlib'
 
 from .version import __version__, short_version

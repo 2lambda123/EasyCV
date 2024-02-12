@@ -1,12 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import random
-import warnings
-from collections.abc import Sequence
-
 import mmcv
 import numpy as np
+import random
 import timm.data as tdata
 import torch
+import warnings
+from collections.abc import Sequence
 from torch.nn.modules.utils import _pair
 
 from easycv.datasets.registry import PIPELINES

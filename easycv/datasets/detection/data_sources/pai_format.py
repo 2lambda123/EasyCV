@@ -1,9 +1,8 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import json
 import logging
-from multiprocessing import cpu_count
-
 import numpy as np
+from multiprocessing import cpu_count
 
 from easycv.datasets.detection.data_sources.base import DetSourceBase
 from easycv.datasets.registry import DATASOURCES

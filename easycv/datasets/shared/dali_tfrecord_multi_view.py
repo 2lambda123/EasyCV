@@ -1,6 +1,5 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import math
-
 from mmcv.runner import get_dist_info
 
 from easycv.datasets.builder import build_datasource
@@ -51,7 +50,9 @@ def _load_DaliTFRecordMultiViewPipe():
 
     import nvidia.dali.ops as ops
     from nvidia.dali.pipeline import Pipeline
-    from easycv.datasets.utils.tfrecord_util import get_imagenet_dali_tfrecord_feature
+
+    from easycv.datasets.utils.tfrecord_util import \
+        get_imagenet_dali_tfrecord_feature
 
     class DaliTFRecordMultiViewPipe(Pipeline):
 

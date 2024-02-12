@@ -1,10 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # Copyright (c) Alibaba, Inc. and its affiliates.
-from os import path as osp
-
 import mmcv
 import torch
 from mmcv.parallel import DataContainer as DC
+from os import path as osp
 
 from easycv.core.bbox.structures import Box3DMode, Coord3DMode
 from easycv.core.visualization.image_3d import show_result

@@ -1,16 +1,14 @@
 #! -*- coding: utf8 -*-
 # Copyright (c) Alibaba, Inc. and its affiliates.
+import numpy as np
 import os
 import shutil
 import time
+import torch
 import unittest
 import uuid
-
-import numpy as np
-import torch
 from mmcv.parallel import MMDistributedDataParallel
 from mmcv.runner import get_dist_info, init_dist
-from tests.ut_config import TMP_DIR_LOCAL
 from torch import nn
 from torch.utils.data import DataLoader
 
@@ -20,6 +18,7 @@ from easycv.hooks.sync_norm_hook import SyncNormHook
 from easycv.runner import EVRunner
 from easycv.utils.logger import get_root_logger
 from easycv.utils.test_util import dist_exec_wrapper
+from tests.ut_config import TMP_DIR_LOCAL
 
 
 def _build_model():

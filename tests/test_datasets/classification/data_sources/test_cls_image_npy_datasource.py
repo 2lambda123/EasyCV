@@ -3,10 +3,9 @@ import random
 import tempfile
 import unittest
 
-from tests.ut_config import CLS_DATA_NPY_LOCAL, CLS_DATA_NPY_OSS
-
 from easycv.datasets.builder import build_datasource
 from easycv.file import io
+from tests.ut_config import CLS_DATA_NPY_LOCAL, CLS_DATA_NPY_OSS
 
 
 class ImageNpyTest(unittest.TestCase):

@@ -2,10 +2,9 @@
 # Adapt from
 # https://github.com/open-mmlab/mmpose/blob/master/mmpose/datasets/datasets/base/kpt_2d_sview_rgb_img_top_down_dataset.py
 import json
+import numpy as np
 import os
 import tempfile
-
-import numpy as np
 from xtcocotools.coco import COCO
 from xtcocotools.cocoeval import COCOeval
 

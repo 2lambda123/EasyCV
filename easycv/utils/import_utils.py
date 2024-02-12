@@ -1,8 +1,7 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
+import numpy as np
 import sys
 from distutils.version import LooseVersion
-
-import numpy as np
 
 
 def check_numpy():

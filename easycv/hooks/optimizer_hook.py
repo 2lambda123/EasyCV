@@ -1,8 +1,7 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import logging
-from distutils.version import LooseVersion
-
 import torch
+from distutils.version import LooseVersion
 from mmcv.parallel import is_module_wrapper
 from mmcv.runner import OptimizerHook as _OptimizerHook
 
