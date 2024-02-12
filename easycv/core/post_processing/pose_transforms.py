@@ -1,8 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # Adapt from https://github.com/open-mmlab/mmpose/blob/master/mmpose/core/post_processing/post_transforms.py
-import math
-
 import cv2
+import math
 import numpy as np
 import torch
 

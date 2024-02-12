@@ -6,10 +6,9 @@ import re
 import time
 from datetime import datetime, timedelta
 from io import BytesIO, StringIO
-from typing import List, Union
-
 from tqdm import tqdm
 from tqdm.utils import CallbackIOWrapper
+from typing import List, Union
 
 from easycv.framework.errors import (FileNotFoundError, IOError, RuntimeError,
                                      ValueError)
@@ -391,8 +390,8 @@ class IO(IOLocal):
             bucket.copy_object(src_bucket.bucket_name, src, dst)
         else:
             # multipart copy
-            from oss2.models import PartInfo
             from oss2 import determine_part_size
+            from oss2.models import PartInfo
             part_size = determine_part_size(
                 total_size, preferred_size=100 * 1024)
             upload_id = bucket.init_multipart_upload(dst).upload_id

@@ -1,16 +1,16 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
+import cv2
+import numpy as np
 import os
 import tempfile
 import unittest
-
-import cv2
-import numpy as np
 from modelscope.outputs import OutputKeys
 from modelscope.pipelines import pipeline
 from modelscope.utils.constant import Tasks
 from modelscope.utils.cv.image_utils import semantic_seg_masks_to_image
 from modelscope.utils.test_utils import test_level
 from PIL import Image
+
 from tests.ut_config import BASE_LOCAL_PATH
 
 

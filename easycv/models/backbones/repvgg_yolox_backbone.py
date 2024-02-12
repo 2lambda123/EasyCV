@@ -1,9 +1,8 @@
 # borrow some code from https://github.com/DingXiaoH/RepVGG/repvgg.py MIT2.0
-import warnings
-
 import numpy as np
 import torch
 import torch.nn as nn
+import warnings
 
 from easycv.models.utils.ops import make_divisible
 

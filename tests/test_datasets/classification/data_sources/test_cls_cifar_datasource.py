@@ -2,9 +2,8 @@
 import random
 import unittest
 
-from tests.ut_config import CIFAR10_LOCAL, CIFAR100_LOCAL
-
 from easycv.datasets.builder import build_datasource
+from tests.ut_config import CIFAR10_LOCAL, CIFAR100_LOCAL
 
 
 class ClsSourceCifarTest(unittest.TestCase):

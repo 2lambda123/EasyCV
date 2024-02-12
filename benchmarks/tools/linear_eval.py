@@ -3,7 +3,6 @@ import argparse
 import os
 import shutil
 import time
-
 import torch
 
 from easycv.framework.errors import ValueError

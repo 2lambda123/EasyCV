@@ -1,13 +1,12 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
-import os
-import unittest
-
 import cv2
 import numpy as np
+import os
+import unittest
 from PIL import Image
-from tests.ut_config import TEST_IMAGES_DIR
 
 from easycv.datasets.shared.pipelines.transforms import LoadImage
+from tests.ut_config import TEST_IMAGES_DIR
 
 
 class LoadImageTest(unittest.TestCase):

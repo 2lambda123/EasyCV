@@ -5,13 +5,12 @@ __author__ = 'tsungyi'
 import copy
 import datetime
 import logging
-import os
-import time
-from collections import defaultdict
-
 import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
+import os
+import time
+from collections import defaultdict
 from xtcocotools import mask as maskUtils
 
 matplotlib.use('Agg')
@@ -206,8 +205,11 @@ class COCOeval:
             computeIoU = self.computeIoU
         elif p.iouType == 'keypoints':
             computeIoU = self.computeOks
-        self.ious = {(imgId, catId): computeIoU(imgId, catId)
-                     for imgId in p.imgIds for catId in catIds}
+        self.ious = {
+            (imgId, catId): computeIoU(imgId, catId)
+            for imgId in p.imgIds
+            for catId in catIds
+        }
 
         evaluateImg = self.evaluateImg
         maxDet = p.maxDets[-1]

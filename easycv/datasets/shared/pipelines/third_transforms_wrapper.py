@@ -1,9 +1,8 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import copy
 import inspect
-from enum import EnumMeta
-
 import torch
+from enum import EnumMeta
 from torchvision import transforms as _transforms
 
 from easycv.datasets.registry import PIPELINES

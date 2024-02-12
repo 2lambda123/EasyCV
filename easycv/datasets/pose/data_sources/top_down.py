@@ -2,11 +2,10 @@
 # Adapt from https://github.com/open-mmlab/mmpose/blob/master/mmpose/datasets/datasets/base/kpt_2d_sview_rgb_img_top_down_dataset.py
 import copy
 import logging
-import os
-from abc import ABCMeta
-
 import mmcv
 import numpy as np
+import os
+from abc import ABCMeta
 from mmcv import Config
 from mmcv.utils.path import is_filepath
 from xtcocotools.coco import COCO

@@ -1,10 +1,9 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import math
-from typing import Optional, Tuple
-
 import numpy as np
 import torch
 from torch import Tensor
+from typing import Optional, Tuple
 
 
 def bound_limits(v):

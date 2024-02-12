@@ -1,9 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # Copyright (c) Alibaba, Inc. and its affiliates.
-from logging import warning
-
 import numpy as np
 import torch
+from logging import warning
 
 from easycv.core.utils.array_converter import array_converter
 

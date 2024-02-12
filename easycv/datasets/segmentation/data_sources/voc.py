@@ -2,7 +2,6 @@
 import os
 from multiprocessing import cpu_count
 from pathlib import Path
-
 from torchvision.datasets.utils import download_and_extract_archive
 
 from easycv.datasets.registry import DATASOURCES

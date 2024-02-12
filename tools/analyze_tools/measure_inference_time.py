@@ -1,6 +1,5 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import argparse
-
 import numpy as np
 import torch
 import tqdm

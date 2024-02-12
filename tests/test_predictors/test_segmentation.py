@@ -1,24 +1,23 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
+import cv2
+import numpy as np
 import os
 import pickle
 import shutil
 import tempfile
 import unittest
-
-import cv2
-import numpy as np
 from mmcv import Config
 from PIL import Image
+
+from easycv.file import io
+from easycv.predictors.segmentation import (Mask2formerPredictor,
+                                            SegmentationPredictor)
 from tests.ut_config import (MODEL_CONFIG_MASK2FORMER_INS,
                              MODEL_CONFIG_MASK2FORMER_PAN,
                              MODEL_CONFIG_MASK2FORMER_SEM,
                              MODEL_CONFIG_SEGFORMER,
                              PRETRAINED_MODEL_MASK2FORMER_DIR,
                              PRETRAINED_MODEL_SEGFORMER, TEST_IMAGES_DIR)
-
-from easycv.file import io
-from easycv.predictors.segmentation import (Mask2formerPredictor,
-                                            SegmentationPredictor)
 
 
 class SegmentationPredictorTest(unittest.TestCase):

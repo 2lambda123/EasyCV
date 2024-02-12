@@ -1,10 +1,9 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 
 import logging
+import numpy as np
 import os
 from pathlib import Path
-
-import numpy as np
 from scipy.io import loadmat
 from torchvision.datasets.utils import download_and_extract_archive
 

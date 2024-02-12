@@ -2,6 +2,7 @@
 """Contains functions which are convenient for unit testing."""
 import copy
 import logging
+import numpy as np
 import os
 import pickle
 import shutil
@@ -10,12 +11,10 @@ import subprocess
 import sys
 import tempfile
 import timeit
+import torch
 import unittest
 import uuid
 from multiprocessing import Process
-
-import numpy as np
-import torch
 
 from easycv.file import io
 from easycv.framework.errors import RuntimeError

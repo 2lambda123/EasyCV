@@ -1,14 +1,13 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
+import numpy as np
 import os
 import random
 import unittest
 
-import numpy as np
-from tests.ut_config import SEG_DATA_SMALL_VOC_DOWNLOAD_LOCAL, VOC_CLASSES
-
 from easycv.datasets.segmentation.data_sources.voc import (SegSourceVoc2007,
                                                            SegSourceVoc2010,
                                                            SegSourceVoc2012)
+from tests.ut_config import SEG_DATA_SMALL_VOC_DOWNLOAD_LOCAL, VOC_CLASSES
 
 
 class SegSourceVocTest(unittest.TestCase):

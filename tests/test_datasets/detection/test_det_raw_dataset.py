@@ -1,12 +1,11 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
+import numpy as np
 import os
 import time
 import unittest
 
-import numpy as np
-from tests.ut_config import DET_DATA_RAW_LOCAL, IMG_NORM_CFG_255
-
 from easycv.datasets.detection import DetDataset
+from tests.ut_config import DET_DATA_RAW_LOCAL, IMG_NORM_CFG_255
 
 
 class DetDatasetTest(unittest.TestCase):

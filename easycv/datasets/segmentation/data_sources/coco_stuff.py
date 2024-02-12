@@ -1,13 +1,12 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 
 import copy
-import logging
-import os
-from multiprocessing import Pool, cpu_count
-
 import cv2
+import logging
 import mmcv
 import numpy as np
+import os
+from multiprocessing import Pool, cpu_count
 from scipy.io import loadmat
 from tqdm import tqdm
 

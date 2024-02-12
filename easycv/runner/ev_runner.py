@@ -1,8 +1,7 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import os
-from distutils.version import LooseVersion
-
 import torch
+from distutils.version import LooseVersion
 from mmcv.runner import EpochBasedRunner
 from mmcv.runner.log_buffer import LogBuffer
 

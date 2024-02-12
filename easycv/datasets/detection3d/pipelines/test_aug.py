@@ -1,9 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # Copyright (c) Alibaba, Inc. and its affiliates.
+import mmcv
 import warnings
 from copy import deepcopy
-
-import mmcv
 
 from easycv.datasets.registry import PIPELINES
 from easycv.datasets.shared.pipelines import Compose

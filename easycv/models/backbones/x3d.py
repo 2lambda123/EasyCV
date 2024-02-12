@@ -1,6 +1,5 @@
 # Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved.
 import math
-
 import torch.nn as nn
 from fvcore.nn.weight_init import c2_msra_fill
 

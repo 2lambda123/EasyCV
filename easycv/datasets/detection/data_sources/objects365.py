@@ -1,5 +1,4 @@
 import os.path as osp
-
 from xtcocotools.coco import COCO
 
 from easycv.datasets.detection.data_sources.coco import DetSourceCoco

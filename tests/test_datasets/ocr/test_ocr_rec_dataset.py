@@ -1,11 +1,10 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import os
+import torch
 import unittest
 
-import torch
-from tests.ut_config import SMALL_OCR_REC_DATA
-
 from easycv.datasets.builder import build_dataset
+from tests.ut_config import SMALL_OCR_REC_DATA
 
 
 class OCRRecsDatasetTest(unittest.TestCase):

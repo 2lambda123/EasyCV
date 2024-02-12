@@ -1,6 +1,5 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import inspect
-
 import pytorch_metric_learning.losses as pml_losses
 import torch
 import torch.nn as nn

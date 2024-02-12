@@ -1,6 +1,5 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import logging
-
 from mmcv.utils import get_logger
 
 from easycv.framework.errors import TypeError

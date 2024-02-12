@@ -1,7 +1,6 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 
 import os
-
 import wget
 
 # The location where downloaded data is stored

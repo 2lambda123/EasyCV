@@ -3,10 +3,9 @@ import os
 import random
 import unittest
 
-from tests.ut_config import SEG_DATA_SAMLL_CITYSCAPES
-
 from easycv.datasets.segmentation.data_sources.cityscapes import \
     SegSourceCityscapes
+from tests.ut_config import SEG_DATA_SAMLL_CITYSCAPES
 
 CLASSES = ('road', 'sidewalk', 'building', 'wall', 'fence', 'pole',
            'traffic light', 'traffic sign', 'vegetation', 'terrain', 'sky',

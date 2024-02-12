@@ -1,8 +1,7 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
-import unittest
-
 import numpy as np
 import torch
+import unittest
 
 from easycv.models.heads import ClsHead
 

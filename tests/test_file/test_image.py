@@ -1,12 +1,11 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 
+import numpy as np
 import os
 import unittest
 
-import numpy as np
-from tests.ut_config import TEST_IMAGES_DIR
-
 from easycv.file.image import load_image
+from tests.ut_config import TEST_IMAGES_DIR
 
 
 class LoadImageTest(unittest.TestCase):

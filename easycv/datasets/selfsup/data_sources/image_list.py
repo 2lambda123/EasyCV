@@ -2,7 +2,6 @@
 import logging
 import os
 import time
-
 from PIL import Image, ImageFile
 
 from easycv.datasets.registry import DATASOURCES

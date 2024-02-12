@@ -1,11 +1,10 @@
 # Copyright (c) 2022 Snap Inc. All rights reserved.
 import itertools
 import os
-from distutils.version import LooseVersion
-
 import timm
 import torch
 import torch.nn as nn
+from distutils.version import LooseVersion
 from timm.models.layers import DropPath, trunc_normal_
 
 from ..modelzoo import efficientformer as model_urls

@@ -12,10 +12,9 @@ https://github.com/facebookresearch/xcit/blob/master/xcit.py
 
 """
 import math
-from functools import partial
-
 import torch
 import torch.nn as nn
+from functools import partial
 from timm.models.layers import DropPath, to_2tuple, trunc_normal_
 from timm.models.vision_transformer import Mlp, _cfg
 

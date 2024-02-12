@@ -1,10 +1,9 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 # Reference: https://github.com/Alpha-VL/FastConvMAE
-from functools import partial
-
 import numpy as np
 import torch
 import torch.nn as nn
+from functools import partial
 from timm.models.layers import trunc_normal_
 
 from easycv.models.registry import BACKBONES

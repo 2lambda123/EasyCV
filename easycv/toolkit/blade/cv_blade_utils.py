@@ -4,15 +4,14 @@ import copy
 import ctypes
 import itertools
 import logging
-import os
-import timeit
-from contextlib import contextmanager
-
 import numpy as np
+import os
 import pandas as pd
+import timeit
 import torch
 import torch_blade
 import torch_blade.tensorrt
+from contextlib import contextmanager
 from torch_blade import optimize
 
 from easycv.framework.errors import RuntimeError

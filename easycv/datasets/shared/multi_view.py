@@ -1,6 +1,5 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import copy
-
 from PIL import Image
 
 from easycv.datasets.builder import build_datasource

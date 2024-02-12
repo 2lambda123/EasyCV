@@ -4,14 +4,11 @@ import os
 import random
 import shutil
 import time
+import torch
 import unittest
 import uuid
-
-import torch
 from mmcv.parallel import MMDistributedDataParallel
 from mmcv.runner import get_dist_info, init_dist
-from tests.ut_config import (COCO_CLASSES, DET_DATA_SMALL_COCO_LOCAL,
-                             IMG_NORM_CFG_255, TMP_DIR_LOCAL)
 from torch import nn
 
 from easycv.datasets import build_dataloader
@@ -21,6 +18,8 @@ from easycv.hooks.sync_random_size_hook import SyncRandomSizeHook
 from easycv.runner import EVRunner
 from easycv.utils.logger import get_root_logger
 from easycv.utils.test_util import dist_exec_wrapper
+from tests.ut_config import (COCO_CLASSES, DET_DATA_SMALL_COCO_LOCAL,
+                             IMG_NORM_CFG_255, TMP_DIR_LOCAL)
 
 
 def _build_model():

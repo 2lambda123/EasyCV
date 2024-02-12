@@ -2,13 +2,12 @@
 # Adapt from: https://github.com/open-mmlab/mmsegmentation/blob/master/tools/convert_datasets/coco_stuff164k.py
 
 import argparse
+import mmcv
+import numpy as np
 import os.path as osp
 import shutil
 from functools import partial
 from glob import glob
-
-import mmcv
-import numpy as np
 from PIL import Image
 
 COCO_LEN = 123287

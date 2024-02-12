@@ -1,13 +1,11 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import copy
-import os.path as osp
-import unittest
-
 import mmcv
 import numpy as np
+import os.path as osp
 import torch
+import unittest
 from numpy.testing import assert_array_almost_equal
-from tests.ut_config import POSE_DATA_SMALL_COCO_LOCAL
 from xtcocotools.coco import COCO
 
 from easycv.datasets.detection.pipelines import MMToTensor, NormalizeTensor
@@ -18,6 +16,7 @@ from easycv.datasets.pose.pipelines import (PoseCollect, TopDownAffine,
                                             TopDownRandomFlip,
                                             TopDownRandomTranslation)
 from easycv.predictors.pose_predictor import _box2cs
+from tests.ut_config import POSE_DATA_SMALL_COCO_LOCAL
 
 
 def _check_flip(origin_imgs, result_imgs):
@@ -113,10 +112,10 @@ class PoseTransformsTest(unittest.TestCase):
         results_scale_rotate = random_scale_rotate(copy.deepcopy(results))
         self.assertTrue(results_scale_rotate['rotation'] <= 180)
         self.assertTrue(results_scale_rotate['rotation'] >= -180)
-        self.assertTrue(
-            (results_scale_rotate['scale'] / results['scale'] <= 1.3).all())
-        self.assertTrue(
-            (results_scale_rotate['scale'] / results['scale'] >= 0.7).all())
+        self.assertTrue((results_scale_rotate['scale'] / results['scale']
+                         <= 1.3).all())
+        self.assertTrue((results_scale_rotate['scale'] / results['scale']
+                         >= 0.7).all())
 
         # test halfbody transform
         halfbody_transform = TopDownHalfBodyTransform(

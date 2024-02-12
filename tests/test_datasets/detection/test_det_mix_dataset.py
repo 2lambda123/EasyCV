@@ -1,13 +1,12 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import os
 import time
+import torch
 import unittest
 
-import torch
+from easycv.datasets.builder import build_dataset
 from tests.ut_config import (COCO_CLASSES, DET_DATA_SMALL_COCO_LOCAL,
                              IMG_NORM_CFG_255)
-
-from easycv.datasets.builder import build_dataset
 
 
 class DetImagesMixDatasetTest(unittest.TestCase):

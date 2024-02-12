@@ -1,9 +1,8 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
-import warnings
-
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+import warnings
 from mmcv.cnn import ConvModule
 
 from easycv.models.builder import HEADS

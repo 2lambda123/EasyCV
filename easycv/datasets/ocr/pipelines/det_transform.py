@@ -1,13 +1,12 @@
 # Modified from https://github.com/PaddlePaddle/PaddleOCR/tree/release/2.6/ppocr/data/imaug
-import math
-import random
-import sys
-
 import cv2
 import imgaug
 import imgaug.augmenters as iaa
+import math
 import numpy as np
 import pyclipper
+import random
+import sys
 from shapely.geometry import Polygon
 
 from easycv.datasets.registry import PIPELINES
@@ -32,10 +31,10 @@ class AugmenterBuilder(object):
                     args[0])(*[self.to_tuple_if_list(a) for a in args[1:]])
         elif isinstance(args, dict):
             cls = getattr(iaa, args['type'])
-            return cls(
-                **
-                {k: self.to_tuple_if_list(v)
-                 for k, v in args['args'].items()})
+            return cls(**{
+                k: self.to_tuple_if_list(v)
+                for k, v in args['args'].items()
+            })
         else:
             raise RuntimeError('unknown augmenter arg: ' + str(args))
 

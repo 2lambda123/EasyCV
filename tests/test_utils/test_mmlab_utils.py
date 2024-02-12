@@ -1,12 +1,9 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import os
+import torch
 import unittest
 from inspect import signature
-
-import torch
 from mmcv.parallel import scatter_kwargs
-from tests.ut_config import (COCO_CLASSES, DET_DATA_SMALL_COCO_LOCAL,
-                             IMG_NORM_CFG_255)
 
 from easycv.apis.test import single_gpu_test
 from easycv.datasets import build_dataloader, build_dataset
@@ -14,6 +11,8 @@ from easycv.models.builder import build_model
 from easycv.utils.config_tools import mmcv_config_fromfile
 from easycv.utils.mmlab_utils import (dynamic_adapt_for_mmlab,
                                       remove_adapt_for_mmlab)
+from tests.ut_config import (COCO_CLASSES, DET_DATA_SMALL_COCO_LOCAL,
+                             IMG_NORM_CFG_255)
 
 
 class MMLabUtilTest(unittest.TestCase):
@@ -127,10 +126,10 @@ class MMLabUtilTest(unittest.TestCase):
     def test_reset(self):
         model = self._get_model()
         remove_adapt_for_mmlab(self.cfg)
-        from mmdet.models.builder import MODELS as MMMODELS
         from mmdet.models.builder import BACKBONES as MMBACKBONES
-        from mmdet.models.builder import NECKS as MMNECKS
         from mmdet.models.builder import HEADS as MMHEADS
+        from mmdet.models.builder import MODELS as MMMODELS
+        from mmdet.models.builder import NECKS as MMNECKS
         mmdet_registry = {
             'model': MMMODELS,
             'backbone': MMBACKBONES,

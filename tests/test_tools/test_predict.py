@@ -6,15 +6,14 @@ import logging
 import os
 import sys
 import tempfile
-import unittest
-
 import torch
+import unittest
 from mmcv import Config
-from tests.ut_config import (PRETRAINED_MODEL_SEGFORMER,
-                             PRETRAINED_MODEL_YOLOXS_EXPORT, TEST_IMAGES_DIR)
 
 from easycv.file import get_oss_config, io
 from easycv.utils.test_util import run_in_subprocess
+from tests.ut_config import (PRETRAINED_MODEL_SEGFORMER,
+                             PRETRAINED_MODEL_YOLOXS_EXPORT, TEST_IMAGES_DIR)
 
 sys.path.append(os.path.dirname(os.path.realpath(__file__)))
 

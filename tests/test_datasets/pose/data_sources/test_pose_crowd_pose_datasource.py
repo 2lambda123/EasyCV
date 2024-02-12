@@ -1,12 +1,11 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
+import numpy as np
 import random
 import unittest
 
-import numpy as np
-from tests.ut_config import POSE_DATA_CROWDPOSE_SMALL_LOCAL
-
 from easycv.datasets.pose.data_sources.crowd_pose import \
     PoseTopDownSourceCrowdPose
+from tests.ut_config import POSE_DATA_CROWDPOSE_SMALL_LOCAL
 
 _DATA_CFG = dict(
     image_size=[288, 384],

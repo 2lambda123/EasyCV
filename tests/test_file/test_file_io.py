@@ -6,11 +6,10 @@ import tempfile
 import unittest
 import uuid
 
+from easycv.file import io
 from tests.ut_config import (BASE_LOCAL_PATH, CLS_DATA_NPY_LOCAL,
                              CLS_DATA_NPY_OSS, IO_DATA_MULTI_DIRS_OSS,
                              IO_DATA_TXTX_OSS, TMP_DIR_OSS)
-
-from easycv.file import io
 
 
 class IOForOSSTest(unittest.TestCase):

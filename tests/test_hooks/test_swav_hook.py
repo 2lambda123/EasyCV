@@ -3,12 +3,10 @@
 import os
 import shutil
 import time
+import torch
 import unittest
 import uuid
-
-import torch
 from mmcv.parallel import MMDataParallel
-from tests.ut_config import TMP_DIR_LOCAL
 from torch import distributed as dist
 
 from easycv.datasets import build_dataloader
@@ -17,6 +15,7 @@ from easycv.hooks.swav_hook import SWAVHook
 from easycv.runner import EVRunner
 from easycv.utils.logger import get_root_logger
 from easycv.utils.test_util import pseudo_dist_init
+from tests.ut_config import TMP_DIR_LOCAL
 
 
 class DummyDataset(object):

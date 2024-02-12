@@ -12,12 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # Modified from https://github.com/PaddlePaddle/PaddleOCR/blob/release/2.6/ppocr/postprocess/rec_postprocess.py
+import numpy as np
 import os.path as osp
 import re
-import string
-
-import numpy as np
 import requests
+import string
 import torch
 
 

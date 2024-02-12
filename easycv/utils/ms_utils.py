@@ -1,7 +1,6 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
-import os
-
 import jsonplus
+import os
 
 from easycv.file import io
 from easycv.utils.config_tools import Config

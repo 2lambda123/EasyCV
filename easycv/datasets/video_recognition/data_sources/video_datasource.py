@@ -1,7 +1,6 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import copy
 import os
-
 import torch
 
 from easycv.datasets.registry import DATASOURCES

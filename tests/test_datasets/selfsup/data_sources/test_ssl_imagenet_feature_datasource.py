@@ -2,10 +2,9 @@
 import random
 import unittest
 
-from tests.ut_config import SSL_SMALL_IMAGENET_FEATURE
-
 from easycv.datasets.selfsup.data_sources.imagenet_feature import \
     SSLSourceImageNetFeature
+from tests.ut_config import SSL_SMALL_IMAGENET_FEATURE
 
 
 class SSLSourceImageNetFeatureTest(unittest.TestCase):

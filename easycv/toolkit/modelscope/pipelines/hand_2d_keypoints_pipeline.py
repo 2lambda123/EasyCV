@@ -1,6 +1,5 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import os.path
-
 from modelscope.pipelines.builder import PIPELINES
 from modelscope.utils.constant import ModelFile, Tasks
 

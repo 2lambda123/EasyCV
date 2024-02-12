@@ -1,7 +1,6 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import inspect
 import logging
-
 from modelscope.trainers.hooks import HOOKS
 from modelscope.trainers.parallel.builder import PARALLEL
 from modelscope.utils.registry import default_group
@@ -35,7 +34,7 @@ _dynamic_register = _RegisterManager()
 
 
 def register_parallel():
-    from mmcv.parallel import MMDistributedDataParallel, MMDataParallel
+    from mmcv.parallel import MMDataParallel, MMDistributedDataParallel
 
     mmddp = 'MMDistributedDataParallel'
     mmdp = 'MMDataParallel'
@@ -75,9 +74,11 @@ def register_part_mmcv_hooks_to_ms():
         EasyCV: https://github.com/alibaba/EasyCV/blob/master/easycv/hooks/lr_update_hook.py
         mmcv: https://github.com/open-mmlab/mmcv/blob/master/mmcv/runner/hooks/lr_updater.py
     """
-    from mmcv.runner.hooks import lr_updater
     from mmcv.runner.hooks import HOOKS as _MMCV_HOOKS
-    from easycv.hooks import StepFixCosineAnnealingLrUpdaterHook, YOLOXLrUpdaterHook
+    from mmcv.runner.hooks import lr_updater
+
+    from easycv.hooks import (StepFixCosineAnnealingLrUpdaterHook,
+                              YOLOXLrUpdaterHook)
 
     mmcv_hooks_in_easycv = [('StepFixCosineAnnealingLrUpdaterHook',
                              StepFixCosineAnnealingLrUpdaterHook),

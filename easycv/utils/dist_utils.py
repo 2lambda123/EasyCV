@@ -1,14 +1,13 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import functools
+import numpy as np
 import os
 import pickle
 import random
-from collections import OrderedDict
-from contextlib import contextmanager
-
-import numpy as np
 import torch
 import torch.distributed as dist
+from collections import OrderedDict
+from contextlib import contextmanager
 from mmcv.parallel import data_parallel as mm_data_parallel
 from mmcv.parallel import distributed as mm_distributed
 from mmcv.runner.dist_utils import get_dist_info

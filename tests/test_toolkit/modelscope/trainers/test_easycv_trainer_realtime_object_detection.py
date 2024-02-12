@@ -2,9 +2,8 @@
 import glob
 import os
 import tempfile
-import unittest
-
 import torch
+import unittest
 from modelscope.hub.snapshot_download import snapshot_download
 from modelscope.msdatasets import MsDataset
 from modelscope.trainers import build_trainer

@@ -1,9 +1,7 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import copy
-import math
-from typing import Any
-
 import cv2
+import math
 import numpy as np
 from modelscope.outputs import OutputKeys
 from modelscope.pipelines import pipeline
@@ -11,6 +9,7 @@ from modelscope.pipelines.builder import PIPELINES
 from modelscope.preprocessors import LoadImage
 from modelscope.utils.constant import ModelFile, Tasks
 from modelscope.utils.logger import get_logger
+from typing import Any
 
 from easycv.toolkit.modelscope.metainfo import EasyCVPipelines as Pipelines
 from .base import EasyCVPipeline

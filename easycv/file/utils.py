@@ -7,7 +7,6 @@ import urllib
 from collections import namedtuple
 from contextlib import contextmanager
 from io import StringIO
-
 from tqdm import tqdm
 
 from easycv.framework.errors import ValueError

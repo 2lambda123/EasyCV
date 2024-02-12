@@ -2,11 +2,10 @@
 import os
 import unittest
 
-from tests.ut_config import (BASE_LOCAL_PATH, PRETRAINED_MODEL_WHOLEBODY,
-                             PRETRAINED_MODEL_WHOLEBODY_DETECTION)
-
 from easycv.predictors.wholebody_keypoints_predictor import \
     WholeBodyKeypointsPredictor
+from tests.ut_config import (BASE_LOCAL_PATH, PRETRAINED_MODEL_WHOLEBODY,
+                             PRETRAINED_MODEL_WHOLEBODY_DETECTION)
 
 DEFAULT_WHOLEBODY_DETECTION_MODEL_PATH = PRETRAINED_MODEL_WHOLEBODY_DETECTION
 DEFAULT_WHOLEBODY_DETECTION_CONFIG_FILE = 'configs/detection/yolox/yolox_x_8xb8_300e_coco.py'

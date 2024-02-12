@@ -1,9 +1,8 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
-from distutils.version import LooseVersion
-
 import cv2
 import numpy as np
 import torch
+from distutils.version import LooseVersion
 from PIL import Image
 from timm.data import create_transform
 from torchvision import transforms as _transforms

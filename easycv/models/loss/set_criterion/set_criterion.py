@@ -97,8 +97,8 @@ class SetCriterion(nn.Module):
         tgt_lengths = torch.as_tensor([len(v['labels']) for v in targets],
                                       device=device)
         # Count the number of predictions that are NOT "no-object" (which is the last class)
-        card_pred = (pred_logits.argmax(-1) !=
-                     pred_logits.shape[-1] - 1).sum(1)
+        card_pred = (pred_logits.argmax(-1)
+                     != pred_logits.shape[-1] - 1).sum(1)
         card_err = F.l1_loss(card_pred.float(), tgt_lengths.float())
         losses = {'cardinality_error': card_err}
         return losses
@@ -275,7 +275,8 @@ class SetCriterion(nn.Module):
                     l_dict = self.get_loss(loss, aux_outputs, targets, indices,
                                            num_boxes, **kwargs)
                     l_dict = {
-                        k + f'_{i}': v *
+                        k + f'_{i}':
+                        v *
                         (self.weight_dict[k] if k in self.weight_dict else 1.0)
                         for k, v in l_dict.items()
                     }
@@ -581,7 +582,8 @@ class DNCriterion(nn.Module):
                     l_dict = self.tgt_loss_labels(output_known_class[i],
                                                   known_labels, num_tgt, 0.25)
                     l_dict = {
-                        k + f'_dn_{i}': v *
+                        k + f'_dn_{i}':
+                        v *
                         (self.weight_dict[k] if k in self.weight_dict else 1.0)
                         for k, v in l_dict.items()
                     }
@@ -589,7 +591,8 @@ class DNCriterion(nn.Module):
                     l_dict = self.tgt_loss_boxes(output_known_coord[i],
                                                  known_bboxs, num_tgt)
                     l_dict = {
-                        k + f'_dn_{i}': v *
+                        k + f'_dn_{i}':
+                        v *
                         (self.weight_dict[k] if k in self.weight_dict else 1.0)
                         for k, v in l_dict.items()
                     }
@@ -600,7 +603,8 @@ class DNCriterion(nn.Module):
                     l_dict['loss_giou_dn'] = torch.as_tensor(0.).to('cuda')
                     l_dict['loss_ce_dn'] = torch.as_tensor(0.).to('cuda')
                     l_dict = {
-                        k + f'_{i}': v *
+                        k + f'_{i}':
+                        v *
                         (self.weight_dict[k] if k in self.weight_dict else 1.0)
                         for k, v in l_dict.items()
                     }

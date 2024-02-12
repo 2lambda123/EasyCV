@@ -1,9 +1,10 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 # !/usr/bin/env python
+from setuptools import find_packages, setup
+
 import os
 import shutil
 import subprocess
-from setuptools import find_packages, setup
 
 
 def readme():
@@ -77,9 +78,9 @@ def parse_requirements(fname='requirements.txt', with_version=True):
     CommandLine:
         python -c "import setup; print(setup.parse_requirements())"
     """
+    import re
     import sys
     from os.path import exists
-    import re
     require_fpath = fname
 
     def parse_line(line):

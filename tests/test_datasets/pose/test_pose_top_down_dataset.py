@@ -1,10 +1,9 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
+import torch
 import unittest
 
-import torch
-from tests.ut_config import POSE_DATA_SMALL_COCO_LOCAL
-
 from easycv.datasets.pose import PoseTopDownDataset
+from tests.ut_config import POSE_DATA_SMALL_COCO_LOCAL
 
 _DATA_CFG = dict(
     image_size=[288, 384],
