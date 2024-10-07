@@ -1,11 +1,10 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
+import numpy as np
 import platform
 import random
+import torch
 from distutils.version import LooseVersion
 from functools import partial
-
-import numpy as np
-import torch
 from mmcv.parallel import collate
 from mmcv.runner import get_dist_info
 from torch.utils.data import DataLoader

@@ -6,16 +6,15 @@ import logging
 import os
 import sys
 import tempfile
-import unittest
-
 import torch
+import unittest
 from mmcv import Config
-from tests.ut_config import (DET_DATA_MANIFEST_OSS, DET_DATA_SMALL_COCO_LOCAL,
-                             PRETRAINED_MODEL_YOLOXS)
 
 from easycv.file import io
 from easycv.file.utils import get_oss_config
 from easycv.utils.test_util import run_in_subprocess
+from tests.ut_config import (DET_DATA_MANIFEST_OSS, DET_DATA_SMALL_COCO_LOCAL,
+                             PRETRAINED_MODEL_YOLOXS)
 
 sys.path.append(os.path.dirname(os.path.realpath(__file__)))
 

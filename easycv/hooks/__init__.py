@@ -1,7 +1,6 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
-from distutils.version import LooseVersion
-
 import torch
+from distutils.version import LooseVersion
 
 from .best_ckpt_saver_hook import BestCkptSaverHook
 from .builder import build_hook

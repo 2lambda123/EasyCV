@@ -2,7 +2,6 @@
 import os
 import tempfile
 import unittest
-
 from modelscope.msdatasets import MsDataset
 from modelscope.trainers import build_trainer
 from modelscope.utils.constant import LogKeys

@@ -1,11 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 
 import json
+import numpy as np
 import os
 from glob import glob
 from multiprocessing import cpu_count
-
-import numpy as np
 
 from easycv.datasets.registry import DATASOURCES
 from easycv.file import io

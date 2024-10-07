@@ -5,14 +5,13 @@
 """
 
 import logging
-from functools import partial
-from math import sqrt
-
 import numpy as np
 import torch
 import torch.distributed as dist
 import torch.nn as nn
 import torch.nn.functional as F
+from functools import partial
+from math import sqrt
 from timm.models.layers import DropPath, to_2tuple, trunc_normal_
 
 from easycv.models.utils import Mlp

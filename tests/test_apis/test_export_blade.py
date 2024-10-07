@@ -1,18 +1,17 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import json
+import numpy as np
 import os
 import subprocess
 import tempfile
-import unittest
-
-import numpy as np
 import torch
-from tests.ut_config import (PRETRAINED_MODEL_RESNET50,
-                             PRETRAINED_MODEL_YOLOXS_EXPORT)
+import unittest
 
 from easycv.apis.export import export
 from easycv.utils.config_tools import mmcv_config_fromfile
 from easycv.utils.test_util import clean_up, get_tmp_dir
+from tests.ut_config import (PRETRAINED_MODEL_RESNET50,
+                             PRETRAINED_MODEL_YOLOXS_EXPORT)
 
 
 @unittest.skipIf(torch.__version__ != '1.8.1+cu102',

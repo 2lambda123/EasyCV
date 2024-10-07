@@ -2,9 +2,8 @@
 # Adapt from https://github.com/open-mmlab/mmpose/blob/master/mmpose/datasets/datasets/top_down/topdown_coco_dataset.py
 import json
 import logging
-import os
-
 import numpy as np
+import os
 
 from easycv.datasets.registry import DATASOURCES
 from easycv.framework.errors import ValueError

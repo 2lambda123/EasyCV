@@ -1,6 +1,5 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import math
-
 import torch.nn as nn
 
 from ..modelzoo import resnext as model_urls

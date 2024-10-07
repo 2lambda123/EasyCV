@@ -1,10 +1,9 @@
 import copy
+import cv2
 import json
 import logging
-import os
-
-import cv2
 import numpy as np
+import os
 import torch
 import torch.utils.data as data
 

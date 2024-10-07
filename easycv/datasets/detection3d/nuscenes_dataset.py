@@ -3,14 +3,13 @@
 import concurrent.futures
 import copy
 import logging
-import random
-import tempfile
-from os import path as osp
-
 import mmcv
 import numpy as np
+import random
+import tempfile
 import torch
 from mmcv.parallel import DataContainer as DC
+from os import path as osp
 
 from easycv.core.bbox import Box3DMode, Coord3DMode
 from easycv.datasets.registry import DATASETS

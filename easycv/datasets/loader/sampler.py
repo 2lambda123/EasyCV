@@ -1,9 +1,9 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 from __future__ import division
-import math
-import random
 
+import math
 import numpy as np
+import random
 import torch
 import torch.distributed as dist
 from mmcv.runner import get_dist_info

@@ -1,9 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 
+import numpy as np
 import os
 from multiprocessing import cpu_count
-
-import numpy as np
 
 from easycv.datasets.registry import DATASOURCES
 from easycv.file import io

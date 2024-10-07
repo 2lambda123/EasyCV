@@ -1,13 +1,12 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import copy
+import cv2
 import functools
 import logging
-from abc import abstractmethod
-from multiprocessing import Pool, cpu_count
-
-import cv2
 import mmcv
 import numpy as np
+from abc import abstractmethod
+from multiprocessing import Pool, cpu_count
 from tqdm import tqdm
 
 from easycv.datasets.registry import DATASOURCES

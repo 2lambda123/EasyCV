@@ -13,13 +13,13 @@ files can be prepared for various data splits
 
 from __future__ import (absolute_import, division, print_function,
                         unicode_literals)
+
 import argparse
 import logging
+import numpy as np
 import os
 import sys
 from glob import glob
-
-import numpy as np
 
 # initiate the logger
 FORMAT = '[%(levelname)s: %(filename)s: %(lineno)4d]: %(message)s'

@@ -17,7 +17,8 @@ except Exception as e:
         'Import YOLOX failed! please check your CUDA & Pytorch Version')
 
 try:
-    from easycv.models.detection.detectors.yolox_edge.yolox_edge import YOLOX_EDGE
+    from easycv.models.detection.detectors.yolox_edge.yolox_edge import \
+        YOLOX_EDGE
 except Exception as e:
     logging.info(f'Exception: {e}')
     logging.info(

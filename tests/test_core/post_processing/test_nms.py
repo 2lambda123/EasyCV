@@ -1,7 +1,6 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
-import unittest
-
 import numpy as np
+import unittest
 
 from easycv.core.post_processing.nms import oks_iou, oks_nms, soft_oks_nms
 

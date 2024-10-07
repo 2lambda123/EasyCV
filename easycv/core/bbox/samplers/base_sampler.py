@@ -1,8 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # Copyright (c) Alibaba, Inc. and its affiliates.
-from abc import ABCMeta, abstractmethod
-
 import torch
+from abc import ABCMeta, abstractmethod
 
 from .sampling_result import SamplingResult
 

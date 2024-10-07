@@ -1,7 +1,6 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import logging
 import math
-
 import torch
 import torch.nn as nn
 from mmcv.cnn import kaiming_init, normal_init

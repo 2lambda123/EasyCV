@@ -1,11 +1,10 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
-import unittest
-
 import torch
-from tests.ut_config import SMALL_COCO_WHOLEBODY_ROOT
+import unittest
 
 from easycv.datasets.builder import build_datasource
 from easycv.datasets.pose import WholeBodyCocoTopDownDataset
+from tests.ut_config import SMALL_COCO_WHOLEBODY_ROOT
 
 channel_cfg = dict(
     num_output_channels=133,

@@ -40,10 +40,9 @@ then evaluation (in multi-class mode) can be invoked as follows:
 
 """
 import copy
+import numpy as np
 import time
 from collections import OrderedDict
-
-import numpy as np
 from future import standard_library
 from xtcocotools import mask
 from xtcocotools.coco import COCO

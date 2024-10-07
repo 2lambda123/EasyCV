@@ -1,8 +1,7 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
-import unittest
-
 import numpy as np
 import torch
+import unittest
 from mmcv.runner import init_dist
 from torch import distributed as dist
 from torch.distributed import ReduceOp

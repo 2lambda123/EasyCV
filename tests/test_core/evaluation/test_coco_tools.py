@@ -14,12 +14,11 @@
 # ==============================================================================
 """Tests for tensorflow_model.metrics.coco_tools."""
 import json
+import numpy as np
 import os
 import re
 import tempfile
 import unittest
-
-import numpy as np
 from xtcocotools import mask
 
 from easycv.core.evaluation import coco_tools

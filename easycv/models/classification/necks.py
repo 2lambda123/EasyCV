@@ -1,8 +1,7 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
-from functools import reduce
-
 import torch
 import torch.nn as nn
+from functools import reduce
 from packaging import version
 
 from easycv.models.utils import GeMPooling, ResLayer

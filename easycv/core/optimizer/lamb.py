@@ -1,6 +1,5 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import math
-
 import torch
 from torch.optim import Optimizer
 

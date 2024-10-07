@@ -1,7 +1,6 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
-import unittest
-
 import torch
+import unittest
 from torch import distributed as dist
 
 from easycv.models.builder import build_model

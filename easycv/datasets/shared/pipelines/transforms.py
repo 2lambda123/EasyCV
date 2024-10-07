@@ -1,8 +1,7 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
+import numpy as np
 import time
 from collections.abc import Sequence
-
-import numpy as np
 
 from easycv.datasets.registry import PIPELINES
 from easycv.file.image import load_image

@@ -1,13 +1,11 @@
 # Refer to https://github.com/fundamentalvision/BEVFormer/blob/master/projects/mmdet3d_plugin/datasets/nuscnes_eval.py
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import copy
+import mmcv
+import numpy as np
 import os
 import os.path as osp
 import time
-from typing import Any, Tuple
-
-import mmcv
-import numpy as np
 import tqdm
 from matplotlib import pyplot as plt
 from nuscenes import NuScenes
@@ -32,6 +30,7 @@ from nuscenes.eval.tracking.data_classes import TrackingBox
 from nuscenes.utils.data_classes import Box
 from nuscenes.utils.geometry_utils import BoxVisibility, view_points
 from nuscenes.utils.splits import create_splits_scenes
+from typing import Any, Tuple
 
 from easycv.core.evaluation.base_evaluator import Evaluator
 from easycv.core.evaluation.builder import EVALUATORS
@@ -188,8 +187,8 @@ def center_in_image(box,
     center_3d = box.center.reshape(3, 1)
     center_img = view_points(center_3d, intrinsic, normalize=True)[:2, :]
 
-    visible = np.logical_and(center_img[0, :] > 0,
-                             center_img[0, :] < imsize[0])
+    visible = np.logical_and(center_img[0, :] > 0, center_img[0, :]
+                             < imsize[0])
     visible = np.logical_and(visible, center_img[1, :] < imsize[1])
     visible = np.logical_and(visible, center_img[1, :] > 0)
     visible = np.logical_and(visible, center_3d[2, :] > 1)
@@ -224,8 +223,8 @@ def exist_corners_in_image_but_not_all(
     corners_3d = box.corners()
     corners_img = view_points(corners_3d, intrinsic, normalize=True)[:2, :]
 
-    visible = np.logical_and(corners_img[0, :] > 0,
-                             corners_img[0, :] < imsize[0])
+    visible = np.logical_and(corners_img[0, :] > 0, corners_img[0, :]
+                             < imsize[0])
     visible = np.logical_and(visible, corners_img[1, :] < imsize[1])
     visible = np.logical_and(visible, corners_img[1, :] > 0)
     visible = np.logical_and(visible, corners_3d[2, :] > 1)

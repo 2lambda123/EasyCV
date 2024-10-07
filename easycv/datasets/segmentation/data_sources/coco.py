@@ -1,7 +1,6 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
-import os
-
 import numpy as np
+import os
 from pycocotools.coco import COCO
 from tqdm import tqdm
 

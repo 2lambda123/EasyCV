@@ -1,11 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import argparse
 import json
+import mmcv
 import os
 import os.path as osp
 from collections import defaultdict
-
-import mmcv
 from PIL import Image
 from tqdm import tqdm
 

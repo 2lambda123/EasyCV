@@ -1,9 +1,7 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
+import torch
 from copy import deepcopy
 from functools import partial
-from typing import Callable, Optional, Tuple, Union
-
-import torch
 from modelscope.models.base import TorchModel
 from modelscope.msdatasets import MsDataset
 from modelscope.preprocessors import Preprocessor
@@ -18,6 +16,7 @@ from modelscope.utils.import_utils import LazyImportModule
 from modelscope.utils.registry import default_group
 from torch import nn
 from torch.utils.data import Dataset
+from typing import Callable, Optional, Tuple, Union
 
 from easycv.utils.checkpoint import load_checkpoint as ev_load_checkpoint
 from .utils import register_util

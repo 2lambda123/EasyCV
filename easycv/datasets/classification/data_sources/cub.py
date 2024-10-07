@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import os
-
 import numpy as np
+import os
 from PIL import Image
 
 from easycv.datasets.registry import DATASOURCES

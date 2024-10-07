@@ -1,6 +1,5 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import copy
-
 import cv2
 import numpy as np
 import torch
@@ -281,7 +280,8 @@ class WholeBodyKeypointsPredictor(PredictorV2):
                         meta[k] = torch.tensor(v)
                 output_heatmap = self.model(img, tensor_img_metas)
 
-            from easycv.models.pose.heads.topdown_heatmap_base_head import decode_heatmap
+            from easycv.models.pose.heads.topdown_heatmap_base_head import \
+                decode_heatmap
             output_heatmap = output_heatmap.cpu().numpy()
             result = decode_heatmap(output_heatmap, img_metas,
                                     self.cfg.model.test_cfg)

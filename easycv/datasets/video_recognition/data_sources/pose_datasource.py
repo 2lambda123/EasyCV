@@ -1,12 +1,11 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import copy
-import os.path as osp
-from abc import ABCMeta
-from collections import defaultdict
-
 import mmcv
 import numpy as np
+import os.path as osp
 import torch
+from abc import ABCMeta
+from collections import defaultdict
 from torch.utils.data import Dataset
 
 from easycv.datasets.registry import DATASOURCES

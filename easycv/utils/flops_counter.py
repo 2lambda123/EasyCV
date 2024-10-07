@@ -23,12 +23,11 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-import sys
-from copy import deepcopy
-
 import numpy as np
+import sys
 import torch
 import torch.nn as nn
+from copy import deepcopy
 from thop import profile
 from torch.nn.modules.batchnorm import _BatchNorm
 from torch.nn.modules.conv import _ConvNd, _ConvTransposeMixin

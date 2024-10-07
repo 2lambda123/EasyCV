@@ -1,8 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # Copyright (c) Alibaba, Inc. and its affiliates.
-from abc import ABCMeta, abstractmethod
-
 import torch
+from abc import ABCMeta, abstractmethod
 from mmcv.cnn.utils.weight_init import constant_init
 from mmcv.ops import batched_nms
 from mmcv.runner import BaseModule, force_fp32

@@ -1,9 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # Copyright (c) Alibaba, Inc. and its affiliates.
-import os
-
 import mmcv
 import numpy as np
+import os
 
 from easycv.core.bbox import LiDARInstance3DBoxes
 from easycv.datasets.registry import DATASOURCES

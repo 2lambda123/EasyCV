@@ -1,16 +1,15 @@
 # Refer to https://github.com/fundamentalvision/BEVFormer/blob/master/tools/data_converter/nuscenes_converter.py
 import argparse
-import os
-from collections import OrderedDict
-from os import path as osp
-from typing import List, Tuple, Union
-
 import mmcv
 import numpy as np
+import os
+from collections import OrderedDict
 from nuscenes.nuscenes import NuScenes
 from nuscenes.utils.geometry_utils import view_points
+from os import path as osp
 from pyquaternion import Quaternion
 from shapely.geometry import MultiPoint, box
+from typing import List, Tuple, Union
 
 # from mmdet3d.core.bbox.box_np_ops import points_cam2img as _points_cam2img
 from easycv.core.bbox import points_cam2img
@@ -44,8 +43,8 @@ def create_nuscenes_infos(root_path,
         max_sweeps (int): Max number of sweeps.
             Default: 10
     """
-    from nuscenes.nuscenes import NuScenes
     from nuscenes.can_bus.can_bus_api import NuScenesCanBus
+    from nuscenes.nuscenes import NuScenes
     print(version, root_path)
     nusc = NuScenes(version=version, dataroot=root_path, verbose=True)
     nusc_can_bus = NuScenesCanBus(dataroot=can_bus_root_path)

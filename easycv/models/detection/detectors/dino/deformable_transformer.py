@@ -10,10 +10,9 @@ Copy-paste from torch.nn.Transformer with modifications:
 import copy
 import math
 import random
-from typing import Optional
-
 import torch
 from torch import Tensor, nn
+from typing import Optional
 
 from easycv.framework.errors import NotImplementedError
 from easycv.models.builder import NECKS
@@ -257,7 +256,8 @@ class DeformableTransformer(nn.Module):
             if p.dim() > 1:
                 nn.init.xavier_uniform_(p)
         for m in self.modules():
-            from easycv.thirdparty.deformable_attention.modules import MSDeformAttn
+            from easycv.thirdparty.deformable_attention.modules import \
+                MSDeformAttn
             if isinstance(m, MSDeformAttn):
                 m._reset_parameters()
         if self.num_feature_levels > 1 and self.level_embed is not None:
@@ -667,8 +667,8 @@ class TransformerEncoder(nn.Module):
                 output = output_memory
 
             # aux loss
-            if (layer_id !=
-                    self.num_layers - 1) and ref_token_index is not None:
+            if (layer_id
+                    != self.num_layers - 1) and ref_token_index is not None:
                 out_i = torch.gather(
                     output, 1,
                     ref_token_index.unsqueeze(-1).repeat(1, 1, self.d_model))
@@ -1020,7 +1020,8 @@ class DeformableTransformerDecoderLayer(nn.Module):
         assert decoder_sa_type in ['sa', 'ca_label', 'ca_content']
 
         if decoder_sa_type == 'ca_content':
-            from easycv.thirdparty.deformable_attention.modules import MSDeformAttn
+            from easycv.thirdparty.deformable_attention.modules import \
+                MSDeformAttn
             self.self_attn = MSDeformAttn(
                 d_model, n_levels, n_heads, n_points, im2col_step=64)
 

@@ -1,6 +1,5 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import time
-
 from mmcv.runner.hooks import Hook
 from torch import distributed as dist
 

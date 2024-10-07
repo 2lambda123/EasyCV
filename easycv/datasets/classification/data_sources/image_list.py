@@ -2,7 +2,6 @@
 import json
 import logging
 import os
-
 from PIL import Image, ImageFile
 
 from easycv.datasets.registry import DATASOURCES

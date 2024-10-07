@@ -1,9 +1,8 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import os.path as osp
-from collections import OrderedDict
-
 import torch
 import torch.distributed as dist
+from collections import OrderedDict
 from mmcv.runner import Hook
 from torch.nn.modules.batchnorm import _BatchNorm
 from torch.utils.data import DataLoader

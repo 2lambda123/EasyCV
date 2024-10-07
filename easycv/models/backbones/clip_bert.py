@@ -2,7 +2,6 @@
 # modified from https://github.com/jayleicn/ClipBERT
 import math
 import sys
-
 import torch
 from torch import nn
 from transformers.modeling_utils import PreTrainedModel

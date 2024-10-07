@@ -1,6 +1,5 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import itertools
-
 import mmcv
 import MNN
 import numpy as np

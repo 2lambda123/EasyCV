@@ -1,9 +1,8 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
-import os
-import pickle
-
 import mmcv
 import numpy as np
+import os
+import pickle
 import torch
 from mmcv.parallel import DataContainer as DC
 

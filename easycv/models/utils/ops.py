@@ -1,10 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # Adapt from: https://github.com/open-mmlab/mmpose/blob/master/mmpose/models/utils/ops.py
 import math
-import warnings
-
 import torch
 import torch.nn.functional as F
+import warnings
 
 
 def resize_tensor(input,

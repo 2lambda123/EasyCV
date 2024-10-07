@@ -1,9 +1,8 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import logging
-from abc import ABCMeta, abstractmethod
-
 import torch
 import torch.nn as nn
+from abc import ABCMeta, abstractmethod
 from mmcv.cnn.utils import initialize
 
 from easycv.core.evaluation.metrics import accuracy

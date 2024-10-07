@@ -1,12 +1,8 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
+import numpy as np
 import os
 import random
 import unittest
-
-import numpy as np
-from tests.ut_config import (DET_DATA_SMALL_VOC_LOCAL, VOC_CLASSES,
-                             VOC_DATASET_DOWNLOAD_LOCAL,
-                             VOC_DATASET_DOWNLOAD_SMALL)
 
 from easycv.datasets.detection.data_sources.voc import (DetSourceVOC,
                                                         DetSourceVOC2007,
@@ -14,6 +10,9 @@ from easycv.datasets.detection.data_sources.voc import (DetSourceVOC,
 from easycv.datasets.utils.download_data.download_voc import download_voc
 from easycv.file import io
 from easycv.framework.errors import ValueError
+from tests.ut_config import (DET_DATA_SMALL_VOC_LOCAL, VOC_CLASSES,
+                             VOC_DATASET_DOWNLOAD_LOCAL,
+                             VOC_DATASET_DOWNLOAD_SMALL)
 
 
 class DetSourceVOCTest(unittest.TestCase):

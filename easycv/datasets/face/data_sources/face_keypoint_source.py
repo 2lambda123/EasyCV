@@ -1,10 +1,9 @@
 import copy
+import cv2
 import json
 import logging
-import os
-
-import cv2
 import numpy as np
+import os
 import torch
 
 from easycv.datasets.face.pipelines.face_keypoint_transform import (

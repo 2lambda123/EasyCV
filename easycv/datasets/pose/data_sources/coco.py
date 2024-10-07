@@ -1,10 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # Adapt from https://github.com/open-mmlab/mmpose/blob/master/mmpose/datasets/datasets/top_down/topdown_coco_dataset.py
-import logging
-import os
-
 import json_tricks as json
+import logging
 import numpy as np
+import os
 
 from easycv.datasets.registry import DATASOURCES
 from easycv.datasets.utils.download_data.download_coco import (

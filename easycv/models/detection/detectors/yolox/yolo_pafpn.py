@@ -1,7 +1,6 @@
 # Copyright (c) 2014-2021 Megvii Inc And Alibaba PAI-Teams. All rights reserved.
 import logging
 import math
-
 import torch
 import torch.nn as nn
 

@@ -1,10 +1,9 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import argparse
 import inspect
-from collections import Counter
-
 import numpy as np
 import tqdm
+from collections import Counter
 from fvcore.nn import FlopCountAnalysis, flop_count_table
 from mmcv.parallel import scatter_kwargs
 from prettytable import PrettyTable

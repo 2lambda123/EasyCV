@@ -3,9 +3,8 @@ import glob
 import os
 import shutil
 import tempfile
-import unittest
-
 import torch
+import unittest
 from mmcv.runner.hooks import HOOKS as MMCV_HOOKS
 from modelscope.msdatasets import MsDataset
 from modelscope.trainers import build_trainer

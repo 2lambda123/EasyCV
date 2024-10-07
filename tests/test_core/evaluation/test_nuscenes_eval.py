@@ -1,16 +1,15 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import os
-import unittest
-
 import torch
+import unittest
 from mmcv.parallel import scatter_kwargs
-from tests.ut_config import NUSCENES_CLASSES, SMALL_NUSCENES_PATH
 
 import easycv
 from easycv.core.evaluation import NuScenesEvaluator
 from easycv.datasets import build_dataloader, build_dataset
 from easycv.models import build_model
 from easycv.utils.config_tools import mmcv_config_fromfile
+from tests.ut_config import NUSCENES_CLASSES, SMALL_NUSCENES_PATH
 
 
 class NuScenesEvaluatorTest(unittest.TestCase):

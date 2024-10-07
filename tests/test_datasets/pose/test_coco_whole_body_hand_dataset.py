@@ -1,10 +1,9 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
+import torch
 import unittest
 
-import torch
-from tests.ut_config import SMALL_COCO_WHOLE_BODY_HAND_ROOT
-
 from easycv.datasets.pose import HandCocoWholeBodyDataset
+from tests.ut_config import SMALL_COCO_WHOLE_BODY_HAND_ROOT
 
 _DATA_CFG = dict(
     image_size=[256, 256],

@@ -1,15 +1,14 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 
+import numpy as np
 import os
 import random
 import unittest
 
-import numpy as np
+from easycv.datasets.builder import build_datasource
 from tests.ut_config import (COCO_STUFF_CLASSES,
                              SEG_DATA_SAMLL_COCO_STUFF_164K,
                              SEG_DATA_SMALL_COCO_STUFF_10K)
-
-from easycv.datasets.builder import build_datasource
 
 
 class SegSourceCocoStuffTest(unittest.TestCase):

@@ -1,12 +1,11 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import math
-from distutils.version import LooseVersion
-from typing import List
-
 import torch
+from distutils.version import LooseVersion
 from mmcv.runner.optimizer.builder import OPTIMIZERS
 from torch import Tensor
 from torch.optim import AdamW as _AdamW
+from typing import List
 
 from easycv.framework.errors import RuntimeError
 

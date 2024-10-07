@@ -1,6 +1,5 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import logging
-
 import mmcv
 import numpy as np
 import torch

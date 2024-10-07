@@ -1,5 +1,4 @@
 import json
-
 from mmcv.runner import DefaultOptimizerConstructor, get_dist_info
 
 from .builder import OPTIMIZER_BUILDERS

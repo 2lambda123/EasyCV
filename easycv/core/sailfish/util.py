@@ -15,8 +15,8 @@
 """Utility modules."""
 
 from __future__ import absolute_import, division, print_function
-import math
 
+import math
 import torch
 
 from easycv.core.sailfish.function import (all_cat, all_log_softmax,

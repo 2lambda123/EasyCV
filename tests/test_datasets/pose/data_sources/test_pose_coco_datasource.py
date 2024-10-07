@@ -1,15 +1,14 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
+import numpy as np
 import random
 import unittest
-
-import numpy as np
-from tests.ut_config import (COCO_DATASET_DOWNLOAD_SMALL,
-                             DET_DATA_COCO2017_DOWNLOAD,
-                             POSE_DATA_SMALL_COCO_LOCAL)
 
 from easycv.datasets.pose.data_sources.coco import (PoseTopDownSourceCoco,
                                                     PoseTopDownSourceCoco2017)
 from easycv.datasets.utils.download_data.download_coco import download_coco
+from tests.ut_config import (COCO_DATASET_DOWNLOAD_SMALL,
+                             DET_DATA_COCO2017_DOWNLOAD,
+                             POSE_DATA_SMALL_COCO_LOCAL)
 
 _DATA_CFG = dict(
     image_size=[288, 384],

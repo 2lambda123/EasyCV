@@ -2,10 +2,9 @@
 import os
 import unittest
 
-from tests.ut_config import SMALL_IMAGENET_RAW_LOCAL
-
 from easycv.datasets.builder import build_datasource
 from easycv.file import io
+from tests.ut_config import SMALL_IMAGENET_RAW_LOCAL
 
 
 class ClsSourceImageListByClassTest(unittest.TestCase):

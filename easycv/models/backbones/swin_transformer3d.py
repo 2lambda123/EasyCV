@@ -1,14 +1,13 @@
 # modified from https://github.com/SwinTransformer/Video-Swin-Transformer
-from functools import lru_cache, reduce
-from operator import mul
-
 import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.utils.checkpoint as checkpoint
 from einops import rearrange
+from functools import lru_cache, reduce
 from mmcv.runner import load_checkpoint
+from operator import mul
 from timm.models.layers import DropPath, trunc_normal_
 
 from easycv.models.utils import Mlp
@@ -589,8 +588,8 @@ class SwinTransformer3D(nn.Module):
                 attn_drop=attn_drop_rate,
                 drop_path=dpr[sum(depths[:i_layer]):sum(depths[:i_layer + 1])],
                 norm_layer=norm_layer,
-                downsample=PatchMerging
-                if i_layer < self.num_layers - 1 else None,
+                downsample=PatchMerging if i_layer < self.num_layers -
+                1 else None,
                 use_checkpoint=use_checkpoint)
             self.layers.append(layer)
 

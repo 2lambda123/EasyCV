@@ -2,9 +2,8 @@
 import glob
 import os
 import tempfile
-import unittest
-
 import torch
+import unittest
 from modelscope.msdatasets import MsDataset
 from modelscope.trainers import build_trainer
 from modelscope.utils.constant import DownloadMode, LogKeys

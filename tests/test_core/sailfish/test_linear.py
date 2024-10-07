@@ -15,12 +15,11 @@
 """Linear module tests."""
 
 import math
+import numpy as np
 import os
 import random
-import unittest
-
-import numpy as np
 import torch
+import unittest
 
 from easycv.core import sailfish
 

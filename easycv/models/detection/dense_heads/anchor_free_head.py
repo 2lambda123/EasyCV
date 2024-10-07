@@ -1,10 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # Copyright (c) Alibaba, Inc. and its affiliates.
-import warnings
-from abc import abstractmethod
-
 import torch
 import torch.nn as nn
+import warnings
+from abc import abstractmethod
 from mmcv.cnn import ConvModule
 from mmcv.runner import force_fp32
 

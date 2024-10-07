@@ -1,8 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import logging
-import os
-
 import numpy as np
+import os
 from mmcv import Config
 
 from easycv.datasets.registry import DATASOURCES

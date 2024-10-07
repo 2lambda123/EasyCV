@@ -4,11 +4,10 @@ This model is taken from
 https://github.com/SamsungLabs/EdgeViTs
 """
 
-from collections import OrderedDict
-from functools import partial
-
 import torch
 import torch.nn as nn
+from collections import OrderedDict
+from functools import partial
 from timm.models.layers import DropPath, to_2tuple, trunc_normal_
 
 from easycv.models.utils import ConvMlp, Mlp

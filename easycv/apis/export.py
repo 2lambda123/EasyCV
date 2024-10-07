@@ -3,13 +3,12 @@ import copy
 import json
 import logging
 import pickle
-from collections import OrderedDict
-from distutils.version import LooseVersion
-from typing import Callable, Dict, List, Optional, Tuple
-
 import torch
 import torchvision.transforms.functional as t_f
+from collections import OrderedDict
+from distutils.version import LooseVersion
 from mmcv.utils import Config
+from typing import Callable, Dict, List, Optional, Tuple
 
 from easycv.file import io
 from easycv.framework.errors import NotImplementedError, ValueError
@@ -258,6 +257,7 @@ def _export_yolox(model, cfg, filename):
 
         if export_type != 'raw':
             from easycv.utils.misc import reparameterize_models
+
             # only when we use jit or blade, we need to reparameterize_models before export
             model = reparameterize_models(model)
             device = 'cuda' if torch.cuda.is_available() else 'cpu'
@@ -333,7 +333,8 @@ def _export_yolox(model, cfg, filename):
                     'blade_config',
                     dict(enable_fp16=True, fp16_fallback_op_ratio=0.3))
 
-                from easycv.toolkit.blade import blade_env_assert, blade_optimize
+                from easycv.toolkit.blade import (blade_env_assert,
+                                                  blade_optimize)
                 assert blade_env_assert()
 
                 # optimize model with blade
@@ -678,10 +679,12 @@ def _export_pose_topdown(model, cfg, filename, fp16=False, dummy_inputs=None):
         return _export_common(model, cfg, filename)
 
     def _dummy_inputs(cfg):
-        from easycv.datasets.pose.data_sources.top_down import DatasetInfo
-        from easycv.datasets.pose.data_sources.wholebody.wholebody_coco_source import WHOLEBODY_COCO_DATASET_INFO
-        from easycv.datasets.pose.data_sources.hand.coco_hand import COCO_WHOLEBODY_HAND_DATASET_INFO
         from easycv.datasets.pose.data_sources.coco import COCO_DATASET_INFO
+        from easycv.datasets.pose.data_sources.hand.coco_hand import \
+            COCO_WHOLEBODY_HAND_DATASET_INFO
+        from easycv.datasets.pose.data_sources.top_down import DatasetInfo
+        from easycv.datasets.pose.data_sources.wholebody.wholebody_coco_source import \
+            WHOLEBODY_COCO_DATASET_INFO
 
         data_type = cfg.data.train.data_source.type
         data_info_map = {

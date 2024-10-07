@@ -4,16 +4,15 @@ import logging
 import os
 import sys
 import tempfile
+import torch
 import unittest
 from distutils.version import LooseVersion
-
-import torch
 from mmcv import Config
-from tests.ut_config import (COMPRESSION_TEST_DATA,
-                             PRETRAINED_MODEL_YOLOX_COMPRESSION)
 
 from easycv.file import io
 from easycv.utils.test_util import run_in_subprocess
+from tests.ut_config import (COMPRESSION_TEST_DATA,
+                             PRETRAINED_MODEL_YOLOX_COMPRESSION)
 
 sys.path.append(os.path.dirname(os.path.realpath(__file__)))
 

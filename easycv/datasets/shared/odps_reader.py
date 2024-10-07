@@ -1,13 +1,12 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import base64
-import os
-import time
-from random import randint
-
 import numpy as np
+import os
 import requests
+import time
 from mmcv.runner import get_dist_info
 from PIL import Image, ImageFile
+from random import randint
 
 from easycv.datasets.registry import DATASOURCES
 from easycv.file import io

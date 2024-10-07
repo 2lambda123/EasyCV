@@ -1,13 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import copy
+import cv2
 import logging
 import math
-import os.path as osp
-import warnings
-
-import cv2
 import mmcv
 import numpy as np
+import os.path as osp
+import warnings
 from numpy import random
 from torchvision.transforms import functional as F
 

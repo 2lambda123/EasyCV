@@ -1,12 +1,11 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
+import numpy as np
 import os
 import random
 import unittest
 
-import numpy as np
-from tests.ut_config import DET_DATASET_DOWNLOAD_WIDER_PERSON_LOCAL
-
 from easycv.datasets.builder import build_datasource
+from tests.ut_config import DET_DATASET_DOWNLOAD_WIDER_PERSON_LOCAL
 
 
 class DetSourceWiderPerson(unittest.TestCase):
