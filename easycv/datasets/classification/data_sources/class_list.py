@@ -2,7 +2,6 @@
 import logging
 import os
 import random
-
 from PIL import Image, ImageFile
 
 from easycv.datasets.registry import DATASOURCES

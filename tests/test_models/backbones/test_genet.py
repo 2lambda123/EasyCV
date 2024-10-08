@@ -1,10 +1,9 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import copy
-import random
-import unittest
-
 import numpy as np
+import random
 import torch
+import unittest
 
 from easycv.models import modelzoo
 from easycv.models.backbones import PlainNet

@@ -1,12 +1,11 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import os
+import torch
 import unittest
 
-import torch
+from easycv.datasets.builder import build_dataset
 from tests.ut_config import (IMG_NORM_CFG, SMALL_OCR_DET_DATA,
                              SMALL_OCR_DET_PAI_DATA)
-
-from easycv.datasets.builder import build_dataset
 
 
 class OCRDetDatasetTest(unittest.TestCase):

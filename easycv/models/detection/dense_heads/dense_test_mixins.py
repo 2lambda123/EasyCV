@@ -1,9 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import sys
-from inspect import signature
-
 import torch
+from inspect import signature
 from mmcv.ops import batched_nms
 
 from easycv.core.bbox.bbox_util import bbox_mapping_back

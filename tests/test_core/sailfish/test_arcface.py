@@ -14,12 +14,11 @@
 # ==============================================================================
 """ArcFaceLinear module tests."""
 
+import numpy as np
 import os
 import random
-import unittest
-
-import numpy as np
 import torch
+import unittest
 
 from easycv.core import sailfish
 

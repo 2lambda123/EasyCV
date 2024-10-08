@@ -3,10 +3,9 @@ Mostly copy-paste from
 https://github.com/facebookresearch/mae/blob/main/models_mae.py
 """
 
-from functools import partial
-
 import torch
 import torch.nn as nn
+from functools import partial
 from timm.models.vision_transformer import Block, PatchEmbed
 
 from easycv.models.utils import get_2d_sincos_pos_embed

@@ -1,16 +1,15 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import copy
 import logging
-import warnings
-from abc import ABCMeta, abstractmethod
-from collections import OrderedDict
-from typing import Dict
-
 import torch
 import torch.distributed as dist
 import torch.nn as nn
+import warnings
+from abc import ABCMeta, abstractmethod
+from collections import OrderedDict
 from mmcv.cnn.utils import initialize
 from torch import Tensor
+from typing import Dict
 
 from easycv.framework.errors import NotImplementedError, TypeError
 from easycv.utils.logger import print_log

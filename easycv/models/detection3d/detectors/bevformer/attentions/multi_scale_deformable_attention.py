@@ -2,13 +2,12 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 
 import math
-import warnings
-from typing import Optional
-
 import torch
 import torch.nn as nn
+import warnings
 from mmcv.cnn import constant_init, xavier_init
 from mmcv.runner.base_module import BaseModule
+from typing import Optional
 
 from easycv.models.registry import ATTENTION
 
@@ -97,7 +96,8 @@ class CustomMSDeformableAttention(BaseModule):
         if self.adapt_jit:
             self.ms_deform_attn_op = torch.ops.custom.ms_deform_attn
         else:
-            from easycv.thirdparty.deformable_attention.functions import MSDeformAttnFunction
+            from easycv.thirdparty.deformable_attention.functions import \
+                MSDeformAttnFunction
             self.ms_deform_attn_op = MSDeformAttnFunction.apply
 
     def init_weights(self):

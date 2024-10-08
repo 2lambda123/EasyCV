@@ -1,7 +1,6 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import logging
 import os
-
 from PIL import ImageFile
 
 from easycv.datasets.registry import DATASOURCES

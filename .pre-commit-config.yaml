@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/PyCQA/flake8
-    rev: 3.8.3
+    rev: 7.1.1
     hooks:
       - id: flake8
         exclude: easycv/thirdparty/|examples/
@@ -9,18 +9,18 @@ repos:
   #   hooks:
   #     - id: seed-isort-config
   #       exclude: easycv/thirdparty/
-  - repo: https://github.com/timothycrosley/isort
-    rev: 4.3.21
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.13.2
     hooks:
       - id: isort
         exclude: easycv/thirdparty/|examples/|pai_jobs/
-  - repo: https://github.com/pre-commit/mirrors-yapf
-    rev: v0.30.0
+  - repo: https://github.com/google/yapf
+    rev: v0.40.2
     hooks:
       - id: yapf
         exclude: easycv/thirdparty/|examples/
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v3.1.0
+    rev: v5.0.0
     hooks:
       - id: trailing-whitespace
         exclude: easycv/thirdparty/

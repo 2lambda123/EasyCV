@@ -3,11 +3,10 @@ r""" This model is taken from the official PyTorch model zoo.
      - torchvision.models.inception.py on 31th Aug, 2019
 """
 
-from collections import namedtuple
-
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+from collections import namedtuple
 from mmcv.cnn import constant_init, kaiming_init
 from torch.nn.modules.batchnorm import _BatchNorm
 

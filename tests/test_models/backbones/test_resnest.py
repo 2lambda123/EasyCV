@@ -1,8 +1,7 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
-import unittest
-
 import numpy as np
 import torch
+import unittest
 
 from easycv.models.backbones.resnest import ResNeSt
 from easycv.utils.profiling import benchmark_torch_function

@@ -1,12 +1,11 @@
 # Copyright (c) 2014-2021 Megvii Inc And Alibaba PAI-Teams. All rights reserved.
 import logging
 import math
-from abc import abstractmethod
-from distutils.version import LooseVersion
-
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+from abc import abstractmethod
+from distutils.version import LooseVersion
 
 from easycv.framework.errors import KeyError, RuntimeError
 from easycv.models.backbones.network_blocks import BaseConv, DWConv
@@ -53,8 +52,8 @@ class YOLOXHead_Template(nn.Module):
         if width is None and model_type in self.param_map:
             width = self.param_map[model_type][1]
         else:
-            assert (width !=
-                    None), 'Unknow model type must have a given width!'
+            assert (width
+                    != None), 'Unknow model type must have a given width!'
 
         self.width = width
         self.n_anchors = 1

@@ -1,11 +1,10 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import itertools
-from typing import Dict
-
 import numpy as np
 import torch
 from modelscope.metrics.base import Metric
 from modelscope.metrics.builder import METRICS
+from typing import Dict
 
 
 @METRICS.register_module(module_name='EasyCVMetric')

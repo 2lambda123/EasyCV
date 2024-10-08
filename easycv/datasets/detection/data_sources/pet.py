@@ -1,10 +1,9 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 
+import numpy as np
 import os
 import xml.etree.ElementTree as ET
 from multiprocessing import cpu_count
-
-import numpy as np
 
 from easycv.datasets.registry import DATASOURCES
 from easycv.file import io

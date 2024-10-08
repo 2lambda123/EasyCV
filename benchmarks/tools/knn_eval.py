@@ -1,10 +1,9 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import argparse
-from glob import glob
-
 import numpy as np
 import torch
 import torch.nn as nn
+from glob import glob
 from tqdm import tqdm
 
 args = argparse.ArgumentParser(description='Process some integers.')

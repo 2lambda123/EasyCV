@@ -1,13 +1,12 @@
 # Modified from https://github.com/PaddlePaddle/PaddleOCR/tree/release/2.6/ppocr/data/imaug
-import math
-import random
-import sys
-
 import cv2
 import imgaug
 import imgaug.augmenters as iaa
+import math
 import numpy as np
 import pyclipper
+import random
+import sys
 from shapely.geometry import Polygon
 
 from easycv.datasets.registry import PIPELINES

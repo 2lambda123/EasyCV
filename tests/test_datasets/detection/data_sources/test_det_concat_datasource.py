@@ -3,10 +3,9 @@ import os
 import random
 import unittest
 
+from easycv.datasets.builder import build_datasource
 from tests.ut_config import (DET_DATA_RAW_LOCAL, DET_DATA_SMALL_VOC_LOCAL,
                              VOC_CLASSES)
-
-from easycv.datasets.builder import build_datasource
 
 
 class DetSourceCocoTest(unittest.TestCase):

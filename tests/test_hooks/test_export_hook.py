@@ -2,10 +2,9 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import os
 import time
+import torch
 import unittest
 import uuid
-
-import torch
 from mmcv import Config
 from torch import nn
 from torch.utils.data import DataLoader

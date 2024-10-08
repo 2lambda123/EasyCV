@@ -1,13 +1,12 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import os
-import unittest
-
 import torch
-from tests.ut_config import VIDEO_DATA_SMALL_RAW_LOCAL
+import unittest
 
 from easycv.core.evaluation.builder import build_evaluator
 from easycv.datasets.builder import build_datasource
 from easycv.datasets.video_recognition.raw import VideoDataset
+from tests.ut_config import VIDEO_DATA_SMALL_RAW_LOCAL
 
 
 class VideoDatasetTest(unittest.TestCase):

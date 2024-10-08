@@ -1,6 +1,5 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 from collections import OrderedDict
-
 from sklearn.metrics import roc_auc_score
 
 from .base_evaluator import Evaluator

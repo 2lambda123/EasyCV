@@ -1,9 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # Adapt from https://github.com/open-mmlab/mmpose/blob/master/mmpose/core/evaluation/top_down_eval.py
-import warnings
-
 import cv2
 import numpy as np
+import warnings
 
 from easycv.core.post_processing import transform_preds
 from easycv.framework.errors import ValueError

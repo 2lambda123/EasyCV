@@ -1,9 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # Copyright (c) Alibaba, Inc. and its affiliates.
-from enum import IntEnum, unique
-
 import numpy as np
 import torch
+from enum import IntEnum, unique
 
 from easycv.core.points import (BasePoints, CameraPoints, DepthPoints,
                                 LiDARPoints)

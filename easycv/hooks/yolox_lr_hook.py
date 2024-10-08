@@ -62,8 +62,9 @@ class YOLOXLrUpdaterHook(CosineAnnealingLrUpdaterHook):
             # fixed learning rate
             return target_lr
         else:
-            assert max_progress > (self.warmup_iters + last_iter
-                                   ), 'Please increase the train epoch'
+            assert max_progress > (
+                self.warmup_iters +
+                last_iter), 'Please increase the train epoch'
             return annealing_cos(
                 base_lr, target_lr, (progress - self.warmup_iters) /
                 (max_progress - self.warmup_iters - last_iter))

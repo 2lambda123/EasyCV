@@ -1,8 +1,7 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import math
-import sys
-
 import numpy as np
+import sys
 import torch
 import torch.distributed as dist
 import torch.nn as nn

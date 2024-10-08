@@ -1,23 +1,22 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import json
+import numpy as np
 import os
 import re
 import subprocess
 import tempfile
-import unittest
-
-import numpy as np
 import torch
-from tests.ut_config import (BASE_LOCAL_PATH, IMAGENET_LABEL_TXT,
-                             PRETRAINED_MODEL_BEVFORMER_BASE,
-                             PRETRAINED_MODEL_MOCO, PRETRAINED_MODEL_RESNET50,
-                             PRETRAINED_MODEL_YOLOXS_EXPORT)
+import unittest
 
 import easycv
 from easycv.apis.export import export
 from easycv.file import io
 from easycv.utils.config_tools import mmcv_config_fromfile
 from easycv.utils.test_util import clean_up, get_tmp_dir
+from tests.ut_config import (BASE_LOCAL_PATH, IMAGENET_LABEL_TXT,
+                             PRETRAINED_MODEL_BEVFORMER_BASE,
+                             PRETRAINED_MODEL_MOCO, PRETRAINED_MODEL_RESNET50,
+                             PRETRAINED_MODEL_YOLOXS_EXPORT)
 
 
 class ModelExportTest(unittest.TestCase):
@@ -130,8 +129,9 @@ class ModelExportTest(unittest.TestCase):
         self.assertTrue(
             export_config['model']['backbone']['norm_cfg']['type'] == 'BN')
 
-    @unittest.skipIf(torch.__version__ != '1.8.1+cu102',
-                     'need another environment where mmcv has been recompiled')
+    @unittest.skipIf(
+        torch.__version__ != '1.8.1+cu102',
+        'need another environment where mmcv has been recompiled')
     def test_export_bevformer_jit(self):
         ckpt_path = PRETRAINED_MODEL_BEVFORMER_BASE
 

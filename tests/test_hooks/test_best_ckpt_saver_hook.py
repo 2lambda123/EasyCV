@@ -2,11 +2,9 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import os
 import time
+import torch
 import unittest
 import uuid
-
-import torch
-from tests.ut_config import TMP_DIR_LOCAL
 from torch import nn
 from torch.utils.data import DataLoader
 
@@ -16,6 +14,7 @@ from easycv.hooks import EvalHook
 from easycv.hooks.best_ckpt_saver_hook import BestCkptSaverHook
 from easycv.runner import EVRunner
 from easycv.utils.logger import get_root_logger
+from tests.ut_config import TMP_DIR_LOCAL
 
 
 class DummyDataset(object):

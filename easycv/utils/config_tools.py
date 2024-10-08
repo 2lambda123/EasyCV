@@ -5,7 +5,6 @@ import sys
 import tempfile
 import warnings
 from importlib import import_module
-
 from mmcv import Config, import_modules_from_strings
 
 import easycv

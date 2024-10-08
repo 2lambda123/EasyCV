@@ -1,9 +1,8 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
-import os
-import unittest
-
 import numpy as np
+import os
 import torch
+import unittest
 
 from easycv.models import Recognizer3D
 from easycv.models.builder import build_model

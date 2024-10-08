@@ -1,14 +1,13 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
-import random
-from typing import Dict, List, Tuple
-
 import numpy as np
+import random
 import torch
 import torch.nn as nn
 from mmcv.cnn import kaiming_init, normal_init
 from mmcv.runner import get_dist_info
 from pytorch_metric_learning.miners import *
 from torch import Tensor
+from typing import Dict, List, Tuple
 
 from easycv.core.evaluation.metrics import accuracy
 from easycv.models.loss import CrossEntropyLossWithLabelSmooth

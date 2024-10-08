@@ -1,9 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # Copyright (c) Alibaba, Inc. and its affiliates.
-from os import path as osp
-
 import mmcv
 import numpy as np
+from os import path as osp
 
 
 def _write_obj(points, out_filename):

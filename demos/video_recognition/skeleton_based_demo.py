@@ -1,11 +1,10 @@
 import argparse
-import os
-import os.path as osp
-import shutil
-
 import cv2
 import mmcv
 import numpy as np
+import os
+import os.path as osp
+import shutil
 import torch
 
 from easycv.file.utils import is_url_path

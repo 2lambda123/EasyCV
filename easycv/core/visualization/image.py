@@ -1,13 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # Adapt from https://github.com/open-mmlab/mmpose/blob/master/mmpose/core/visualization/image.py
-import math
-import os
-from os.path import dirname as opd
-
 import cv2
+import math
 import mmcv
 import numpy as np
+import os
 from mmcv.utils.misc import deprecated_api_warning
+from os.path import dirname as opd
 from PIL import Image, ImageDraw, ImageFont
 
 from easycv.framework.errors import FileNotFoundError

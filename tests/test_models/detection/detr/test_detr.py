@@ -1,8 +1,7 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
+import numpy as np
 import tempfile
 import unittest
-
-import numpy as np
 from numpy.testing import assert_array_almost_equal
 
 from easycv.predictors.detector import DetectionPredictor

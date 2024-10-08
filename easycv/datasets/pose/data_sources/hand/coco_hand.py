@@ -2,9 +2,8 @@
 # Adapt from
 # https://github.com/open-mmlab/mmpose/blob/master/mmpose/datasets/datasets/hand/hand_coco_wholebody_dataset.py
 import logging
-import os.path as osp
-
 import numpy as np
+import os.path as osp
 
 from easycv.datasets.registry import DATASOURCES
 from ..top_down import PoseTopDownSource

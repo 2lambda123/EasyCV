@@ -1,15 +1,14 @@
 import copy
-import warnings
-from typing import Optional
-
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+import warnings
 from mmcv.cnn.bricks import Linear
 from mmcv.cnn.bricks.drop import build_dropout
 from mmcv.runner.base_module import BaseModule, ModuleList, Sequential
 from mmcv.utils import ConfigDict
 from torch import Tensor
+from typing import Optional
 
 from easycv.framework.errors import RuntimeError
 from easycv.models.builder import (build_attention, build_feedforward_network,

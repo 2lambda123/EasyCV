@@ -4,11 +4,10 @@ import argparse
 import functools
 import json
 import logging
+import numpy as np
 import os
 import random
 from multiprocessing import Pool, cpu_count
-
-import numpy as np
 from tqdm import tqdm
 
 from easycv.file import io

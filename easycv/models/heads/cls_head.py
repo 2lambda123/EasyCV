@@ -1,9 +1,8 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
-from typing import Dict, List
-
 import torch
 import torch.nn as nn
 from mmcv.cnn.utils.weight_init import initialize
+from typing import Dict, List
 
 from easycv.core.evaluation.metrics import accuracy
 from easycv.utils.logger import get_root_logger

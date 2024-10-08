@@ -8,11 +8,10 @@ Copy-paste from torch.nn.Transformer with modifications:
     * decoder returns a stack of activations from all decoding layers
 """
 import math
-from typing import Optional
-
 import torch
 import torch.nn.functional as F
 from torch import Tensor, nn
+from typing import Optional
 
 from easycv.models.builder import NECKS
 from easycv.models.utils import (TransformerEncoder, TransformerEncoderLayer,

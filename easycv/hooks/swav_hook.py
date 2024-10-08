@@ -1,6 +1,5 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import os
-
 import torch
 from mmcv.runner import Hook, get_dist_info
 

@@ -1,11 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # Adapt from: https://github.com/open-mmlab/mmsegmentation/blob/2d66179630035097dcae08ee958f60d4b5a7fcae/mmseg/models/backbones/mit.py
 import math
-import warnings
-
 import torch
 import torch.nn as nn
 import torch.utils.checkpoint as cp
+import warnings
 from mmcv.cnn import Conv2d, build_activation_layer, build_norm_layer
 from mmcv.cnn.bricks.drop import build_dropout
 from mmcv.cnn.bricks.transformer import MultiheadAttention

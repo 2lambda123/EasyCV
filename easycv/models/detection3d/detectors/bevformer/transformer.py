@@ -1,11 +1,10 @@
 # Modified from https://github.com/fundamentalvision/BEVFormer.
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import copy
-import warnings
-
 import numpy as np
 import torch
 import torch.nn as nn
+import warnings
 from mmcv import ConfigDict
 from mmcv.cnn import build_norm_layer, xavier_init
 from mmcv.runner import auto_fp16, force_fp32

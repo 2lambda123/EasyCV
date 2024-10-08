@@ -1,8 +1,7 @@
 # Modified from https://github.com/PaddlePaddle/PaddleOCR/tree/release/2.6/ppocr/metrics
+import numpy as np
 import string
 from collections import namedtuple
-
-import numpy as np
 from rapidfuzz.distance import Levenshtein
 from shapely.geometry import Polygon
 

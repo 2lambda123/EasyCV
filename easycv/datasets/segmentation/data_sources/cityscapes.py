@@ -1,10 +1,9 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import copy
 import logging
+import numpy as np
 import os
 import subprocess
-
-import numpy as np
 
 from easycv.datasets.registry import DATASOURCES
 from easycv.file import io

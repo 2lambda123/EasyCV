@@ -1,8 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # Adapt from https://github.com/open-mmlab/mmpose/blob/master/mmpose/datasets/pipelines/top_down_transform.py
-import logging
-
 import cv2
+import logging
 import numpy as np
 from mmcv.parallel import DataContainer as DC
 

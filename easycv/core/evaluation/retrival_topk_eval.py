@@ -1,8 +1,7 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
-from pathlib import Path
-
 import numpy as np
 import torch
+from pathlib import Path
 from sklearn.decomposition import PCA
 from tqdm import tqdm
 
@@ -174,9 +173,12 @@ class RetrivalTopKEvaluator(Evaluator):
                         topk_res[topk] += 1
 
         if self.save_results:
-            retrival_index_results = retrival_index_results[1:, ].cpu().numpy()
+            retrival_index_results = retrival_index_results[
+                1:,
+            ].cpu().numpy()
             retrival_distance_results = retrival_distance_results[
-                1:, ].cpu().numpy()
+                1:,
+            ].cpu().numpy()
             retrival_topk_results = retrival_topk_results.cpu().numpy()
             save_results_dict = {}
             save_results_dict[

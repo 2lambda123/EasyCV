@@ -1,15 +1,14 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import itertools
+import mmcv
+import numpy as np
 import os.path as osp
 import pickle
 import tempfile
 import time
-from io import BytesIO
-
-import mmcv
-import numpy as np
 import torch
 import torch.distributed as dist
+from io import BytesIO
 from mmcv.parallel import (MMDataParallel, MMDistributedDataParallel,
                            scatter_kwargs)
 from mmcv.runner import get_dist_info

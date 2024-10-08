@@ -1,7 +1,6 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
-import unittest
-
 import numpy as np
+import unittest
 
 from easycv.core.bbox import bbox_util
 

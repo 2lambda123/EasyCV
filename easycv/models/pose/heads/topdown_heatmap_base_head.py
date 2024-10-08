@@ -1,10 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # Adapt from https://github.com/open-mmlab/mmpose/blob/master/mmpose/models/heads/topdown_heatmap_base_head.py
 
-from abc import ABCMeta, abstractmethod
-
 import numpy as np
 import torch.nn as nn
+from abc import ABCMeta, abstractmethod
 
 from easycv.core.evaluation.top_down_eval import keypoints_from_heatmaps
 from easycv.framework.errors import ValueError

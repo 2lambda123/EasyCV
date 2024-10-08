@@ -1,9 +1,8 @@
 # Modified from https://github.com/fundamentalvision/BEVFormer.
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import copy
-import pickle
-
 import numpy as np
+import pickle
 import torch
 
 from easycv.core.bbox import get_box_type

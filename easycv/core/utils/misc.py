@@ -1,8 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # Copyright (c) Alibaba, Inc. and its affiliates.
-from functools import partial
-
 import torch
+from functools import partial
 
 from easycv.framework.errors import NotImplementedError
 

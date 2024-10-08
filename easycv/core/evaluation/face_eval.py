@@ -23,7 +23,8 @@ class FaceKeypointEvaluator(Evaluator):
         """
 
         def evaluate(predicts, gts, **kwargs):
-            from easycv.models.utils.face_keypoint_utils import get_keypoint_accuracy, get_pose_accuracy
+            from easycv.models.utils.face_keypoint_utils import (
+                get_keypoint_accuracy, get_pose_accuracy)
             ave_pose_acc = 0
             ave_nme = 0
             idx = 0

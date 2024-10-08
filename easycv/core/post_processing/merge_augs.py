@@ -1,9 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import copy
-import warnings
-
 import torch
+import warnings
 from mmcv import ConfigDict
 from mmcv.ops import nms
 

@@ -2,7 +2,6 @@
 import contextlib
 import sys
 import time
-
 import torch
 
 if sys.version_info >= (3, 7):

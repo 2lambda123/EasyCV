@@ -1,11 +1,10 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
-import logging
-import os
-import traceback
-
 import cv2
 import lmdb
+import logging
 import numpy as np
+import os
+import traceback
 
 from easycv.datasets.registry import DATASOURCES
 from easycv.file.image import load_image

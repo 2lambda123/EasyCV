@@ -1,8 +1,7 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import logging
-import traceback
-
 import numpy as np
+import traceback
 
 from easycv.datasets.shared.base import BaseDataset
 

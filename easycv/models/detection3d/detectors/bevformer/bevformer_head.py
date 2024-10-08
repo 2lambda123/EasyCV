@@ -1,7 +1,6 @@
 # Modified from https://github.com/fundamentalvision/BEVFormer.
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import copy
-
 import torch
 import torch.nn as nn
 from mmcv.cnn import Linear, bias_init_with_prob, build_activation_layer
@@ -289,10 +288,14 @@ class BEVFormerHead(AnchorFreeHead):
                 self.num_query,
                 self.num_query,
             ]).bool().to(bev_queries.device)
-            self_attn_mask[self.num_query_one2one:,
-                           0:self.num_query_one2one, ] = True
-            self_attn_mask[0:self.num_query_one2one,
-                           self.num_query_one2one:, ] = True
+            self_attn_mask[
+                self.num_query_one2one:,
+                0:self.num_query_one2one,
+            ] = True
+            self_attn_mask[
+                0:self.num_query_one2one,
+                self.num_query_one2one:,
+            ] = True
 
             outputs = self.transformer(
                 mlvl_feats,

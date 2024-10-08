@@ -1,10 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # Copyright (c) Alibaba, Inc. and its affiliates.
-from typing import List, Tuple
-
 import mmcv
 import numpy as np
 from numpy import random
+from typing import List, Tuple
 
 from easycv.core.bbox import (CameraInstance3DBoxes, DepthInstance3DBoxes,
                               LiDARInstance3DBoxes)

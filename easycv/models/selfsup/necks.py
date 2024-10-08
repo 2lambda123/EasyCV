@@ -1,8 +1,7 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
-from functools import partial
-
 import torch
 import torch.nn as nn
+from functools import partial
 from packaging import version
 from timm.models.vision_transformer import Block
 

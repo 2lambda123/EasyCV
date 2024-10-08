@@ -1,10 +1,9 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import copy
-import math
-import os
-
 import cv2
+import math
 import numpy as np
+import os
 from PIL import Image, ImageDraw, ImageFont
 
 from easycv.predictors.builder import PREDICTORS

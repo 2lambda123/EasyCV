@@ -1,6 +1,5 @@
-from distutils.version import LooseVersion
-
 import torch
+from distutils.version import LooseVersion
 from torch.optim import *
 
 from .builder import build_optimizer_constructor

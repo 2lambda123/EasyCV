@@ -1,10 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # Copyright (c) Alibaba, Inc. and its affiliates.
-import warnings
-from abc import abstractmethod
-
 import numpy as np
 import torch
+import warnings
+from abc import abstractmethod
 from mmcv.ops import box_iou_rotated, points_in_boxes_all, points_in_boxes_part
 
 from .utils import limit_period

@@ -1,9 +1,8 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
-import os
-import unittest
-
 import numpy as np
+import os
 import torch
+import unittest
 
 from easycv.models import Classification
 from easycv.utils.test_util import get_tmp_dir

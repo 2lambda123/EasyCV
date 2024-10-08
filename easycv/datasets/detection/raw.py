@@ -1,7 +1,6 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
-import random
-
 import numpy as np
+import random
 
 from easycv.core.evaluation.coco_evaluation import CocoPanopticEvaluator
 from easycv.core.visualization.image import imshow_bboxes

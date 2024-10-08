@@ -1,8 +1,7 @@
-from abc import ABCMeta, abstractmethod
-
 import numpy as np
 import torch
 import torch.nn as nn
+from abc import ABCMeta, abstractmethod
 
 from ...builder import build_loss
 

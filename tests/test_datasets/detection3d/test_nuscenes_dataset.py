@@ -1,11 +1,10 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import os
+import torch
 import unittest
 
-import torch
-from tests.ut_config import NUSCENES_CLASSES, SMALL_NUSCENES_PATH
-
 from easycv.datasets.detection3d import NuScenesDataset
+from tests.ut_config import NUSCENES_CLASSES, SMALL_NUSCENES_PATH
 
 
 class NuScenesDatasetTest(unittest.TestCase):

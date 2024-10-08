@@ -1,11 +1,10 @@
 # Copyright (c) OpenMMLab, Alibaba Inc. and its affiliates.
 import collections
 import copy
-import os.path as osp
-import tempfile
-
 import mmcv
 import numpy as np
+import os.path as osp
+import tempfile
 import torch
 
 from easycv.core.bbox.bbox_util import xyxy2xywh as xyxy2cxcywh

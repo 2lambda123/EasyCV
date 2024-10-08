@@ -1,12 +1,11 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
+import cv2
 import json
 import logging
-import os
-import pickle
-
-import cv2
 import mmcv
 import numpy as np
+import os
+import pickle
 import torch
 from mmcv.parallel import collate, scatter_kwargs
 from PIL import Image, ImageFile

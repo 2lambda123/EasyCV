@@ -1,9 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from numbers import Number
-from typing import Sequence
-
 import numpy as np
+from numbers import Number
 from PIL import Image
+from typing import Sequence
 
 from easycv.datasets.registry import PIPELINES
 

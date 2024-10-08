@@ -2,9 +2,8 @@
 import random
 import unittest
 
-from tests.ut_config import CLS_DATA_COMMON_LOCAL
-
 from easycv.datasets.builder import build_datasource
+from tests.ut_config import CLS_DATA_COMMON_LOCAL
 
 
 class ClsSourceCaltechTest(unittest.TestCase):

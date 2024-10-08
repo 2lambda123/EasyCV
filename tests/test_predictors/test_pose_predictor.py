@@ -1,18 +1,17 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
+import cv2
+import numpy as np
 import os
 import tempfile
 import unittest
-
-import cv2
-import numpy as np
 from numpy.testing import assert_array_almost_equal
 from PIL import Image
-from tests.ut_config import (BASE_LOCAL_PATH, POSE_DATA_SMALL_COCO_LOCAL,
-                             PRETRAINED_MODEL_POSE_HRNET_EXPORT,
-                             PRETRAINED_MODEL_YOLOXS_EXPORT, TEST_IMAGES_DIR)
 
 from easycv.predictors.pose_predictor import (
     PoseTopDownPredictor, TorchPoseTopDownPredictorWithDetector)
+from tests.ut_config import (BASE_LOCAL_PATH, POSE_DATA_SMALL_COCO_LOCAL,
+                             PRETRAINED_MODEL_POSE_HRNET_EXPORT,
+                             PRETRAINED_MODEL_YOLOXS_EXPORT, TEST_IMAGES_DIR)
 
 
 class PoseTopDownPredictorTest(unittest.TestCase):

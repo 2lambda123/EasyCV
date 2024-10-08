@@ -1,10 +1,9 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import os.path
-from typing import Any
-
 from modelscope.outputs import OutputKeys
 from modelscope.pipelines.builder import PIPELINES
 from modelscope.utils.constant import ModelFile, Tasks
+from typing import Any
 
 from easycv.toolkit.modelscope.metainfo import EasyCVPipelines as Pipelines
 from .base import EasyCVPipeline

@@ -1,6 +1,5 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import math
-
 import torch
 from mmcv.runner import get_dist_info
 
@@ -82,7 +81,9 @@ def _load_ImageNetTFRecordPipe():
 
     import nvidia.dali.ops as ops
     from nvidia.dali.pipeline import Pipeline
-    from easycv.datasets.utils.tfrecord_util import get_imagenet_dali_tfrecord_feature
+
+    from easycv.datasets.utils.tfrecord_util import \
+        get_imagenet_dali_tfrecord_feature
 
     imagenet_feature = get_imagenet_dali_tfrecord_feature()
 

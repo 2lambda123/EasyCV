@@ -1,13 +1,12 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 # Copyright (c) OpenMMLab. All rights reserved.
+import cv2
 import glob
+import mmcv
 import os
 import os.path as osp
 import tempfile
 from argparse import ArgumentParser
-
-import cv2
-import mmcv
 
 from easycv.thirdparty.mot.bytetrack.byte_tracker import BYTETracker
 from easycv.thirdparty.mot.utils import detection_result_filter, show_result

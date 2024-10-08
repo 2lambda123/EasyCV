@@ -2,9 +2,8 @@
 import random
 import unittest
 
-from tests.ut_config import SAMLL_IMAGENET1K_RAW_LOCAL
-
 from easycv.datasets.builder import build_datasource
+from tests.ut_config import SAMLL_IMAGENET1K_RAW_LOCAL
 
 
 class ClsSourceImageNet1kTest(unittest.TestCase):

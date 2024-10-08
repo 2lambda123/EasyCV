@@ -6,11 +6,10 @@ import sys
 import tempfile
 import unittest
 
-from tests.ut_config import CLS_TRAIN_TEST
-
 from easycv.file import io
 from easycv.utils.config_tools import mmcv_config_fromfile, pai_config_fromfile
 from easycv.utils.test_util import run_in_subprocess
+from tests.ut_config import CLS_TRAIN_TEST
 
 sys.path.append(os.path.dirname(os.path.realpath(__file__)))
 

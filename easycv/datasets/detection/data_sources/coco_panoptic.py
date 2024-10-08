@@ -1,8 +1,7 @@
-import os
-from collections import defaultdict
-
 import mmcv
 import numpy as np
+import os
+from collections import defaultdict
 from xtcocotools.coco import COCO
 
 from easycv.datasets.detection.data_sources import DetSourceCoco

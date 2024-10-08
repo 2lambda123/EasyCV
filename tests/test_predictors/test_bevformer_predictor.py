@@ -1,15 +1,12 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
+import mmcv
+import numpy as np
 import os
 import re
 import tempfile
-import unittest
-
-import mmcv
-import numpy as np
 import torch
+import unittest
 from numpy.testing import assert_array_almost_equal
-from tests.ut_config import (PRETRAINED_MODEL_BEVFORMER_BASE,
-                             SMALL_NUSCENES_PATH)
 
 import easycv
 from easycv.apis.export import export
@@ -18,6 +15,8 @@ from easycv.datasets import build_dataset
 from easycv.file import io
 from easycv.predictors import BEVFormerPredictor
 from easycv.utils.config_tools import mmcv_config_fromfile
+from tests.ut_config import (PRETRAINED_MODEL_BEVFORMER_BASE,
+                             SMALL_NUSCENES_PATH)
 
 
 class BEVFormerPredictorTest(unittest.TestCase):

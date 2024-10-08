@@ -1,14 +1,13 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import copy
 import inspect
+import mmcv
+import numpy as np
 import random
 from math import ceil
 from numbers import Number
-from typing import Sequence
-
-import mmcv
-import numpy as np
 from PIL import Image, ImageFilter
+from typing import Sequence
 
 from easycv.datasets.registry import PIPELINES
 from easycv.datasets.shared.pipelines import Compose

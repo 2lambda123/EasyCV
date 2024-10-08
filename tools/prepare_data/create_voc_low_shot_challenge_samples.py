@@ -10,14 +10,14 @@ This script is used to create the low-shot data for VOC svm trainings.
 """
 from __future__ import (absolute_import, division, print_function,
                         unicode_literals)
+
 import argparse
 import json
 import logging
+import numpy as np
 import os
 import random
 import sys
-
-import numpy as np
 
 # create the logger
 FORMAT = '[%(levelname)s: %(filename)s: %(lineno)4d]: %(message)s'

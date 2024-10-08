@@ -3,10 +3,9 @@ import os
 import tempfile
 import unittest
 
-from tests.ut_config import BASE_LOCAL_PATH, PRETRAINED_MODEL_HAND_KEYPOINTS
-
 from easycv.predictors.hand_keypoints_predictor import HandKeypointsPredictor
 from easycv.utils.config_tools import mmcv_config_fromfile
+from tests.ut_config import BASE_LOCAL_PATH, PRETRAINED_MODEL_HAND_KEYPOINTS
 
 MM_DEFAULT_HAND_DETECTION_SSDLITE_MODEL_PATH = 'https://download.openmmlab.com/mmpose/mmdet_pretrained/' \
                                                'ssdlite_mobilenetv2_scratch_600e_onehand-4f9f8686_20220523.pth'

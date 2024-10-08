@@ -1,13 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import math
-from typing import List, Optional
-
 import numpy as np
 import torch
 import torchvision
 from packaging import version
 from torch import Tensor
 from torch.autograd import Function
+from typing import List, Optional
 
 if version.parse(torchvision.__version__) < version.parse('0.7'):
     from torchvision.ops import _new_empty_tensor

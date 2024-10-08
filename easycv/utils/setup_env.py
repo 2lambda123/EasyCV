@@ -1,10 +1,9 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.import os
+import cv2
 import os
 import platform
-import warnings
-
-import cv2
 import torch.multiprocessing as mp
+import warnings
 
 
 # refer to: https://github.com/open-mmlab/mmdetection/blob/master/mmdet/utils/setup_env.py

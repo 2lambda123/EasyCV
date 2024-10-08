@@ -1,12 +1,11 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import logging
-from collections import namedtuple
-
 import torch
 import torch.distributed
 import torchacc.torch_xla.amp as torchacc_amp
 import torchacc.torch_xla.amp.syncfree as xla_optim
 import torchacc.torch_xla.core.xla_model as xm
+from collections import namedtuple
 from prettytable import PrettyTable
 from torch.distributed import ReduceOp
 
@@ -159,8 +158,8 @@ def _register_torchacc_ops():
     origin_zeros = torch.zeros
     torchacc_device = xm.xla_device()
 
+    from torch.types import _bool, _device, _dtype, _int
     from typing import Any, Optional, Union
-    from torch.types import _int, _bool, _dtype, _device
 
     def torcacc_is_initialized():
         # TODO: add initialize attribute

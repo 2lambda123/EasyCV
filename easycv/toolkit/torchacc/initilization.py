@@ -1,9 +1,8 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import os
-from distutils.version import LooseVersion
-
 import torch
 import torchacc.torch_xla.core.xla_model as xm
+from distutils.version import LooseVersion
 
 from .convert_ops import convert_timm_ops, convert_torch_ops_to_torchacc
 

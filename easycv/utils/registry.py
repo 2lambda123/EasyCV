@@ -1,8 +1,7 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import inspect
-from functools import partial
-
 import mmcv
+from functools import partial
 
 from easycv.framework.errors import KeyError, TypeError
 

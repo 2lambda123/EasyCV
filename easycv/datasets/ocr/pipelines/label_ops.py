@@ -13,11 +13,10 @@
 # limitations under the License.
 
 import copy
-import math
-import os.path as osp
-
 import cv2
+import math
 import numpy as np
+import os.path as osp
 import requests
 
 from easycv.datasets.registry import PIPELINES

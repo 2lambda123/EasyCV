@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import copy
-
 import numpy as np
 import torch
 

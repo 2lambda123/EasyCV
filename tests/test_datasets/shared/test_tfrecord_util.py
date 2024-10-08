@@ -2,10 +2,9 @@ import os
 import unittest
 import uuid
 
-from tests.ut_config import SMALL_IMAGENET_TFRECORD_OSS, TMP_DIR_LOCAL
-
 from easycv.datasets.utils import download_tfrecord
 from easycv.file import io
+from tests.ut_config import SMALL_IMAGENET_TFRECORD_OSS, TMP_DIR_LOCAL
 
 
 class DistDownloadTfrecordTest(unittest.TestCase):

@@ -2,12 +2,10 @@
 # Copyright (c) Alibaba, Inc. and its affiliates.
 import os
 import time
+import torch
 import unittest
 import uuid
-
-import torch
 from mmcv.utils import get_logger
-from tests.ut_config import TMP_DIR_OSS
 from torch import nn
 from torch.utils.data import DataLoader
 
@@ -15,6 +13,7 @@ from easycv.file import io
 from easycv.hooks.oss_sync_hook import OSSSyncHook
 from easycv.runner import EVRunner
 from easycv.utils.test_util import get_tmp_dir
+from tests.ut_config import TMP_DIR_OSS
 
 
 class OSSSyncHookTest(unittest.TestCase):
