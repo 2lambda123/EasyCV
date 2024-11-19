@@ -15,7 +15,7 @@ repos:
       - id: isort
         exclude: easycv/thirdparty/|examples/|pai_jobs/
   - repo: https://github.com/google/yapf
-    rev: v0.40.2
+    rev: v0.43.0
     hooks:
       - id: yapf
         exclude: easycv/thirdparty/|examples/
